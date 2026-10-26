@@ -12,87 +12,275 @@
   "requetes_bloquees": [],
   "instants": [
     {
-      "t": 2,
-      "nom": "01-accroche",
+      "t": 0.3,
+      "nom": "00-transition-boucle",
       "textes": [
         {
-          "txt": "Vous produisez",
-          "taille": 150,
+          "txt": "Et si",
+          "taille": 112,
           "boite": [
-            252,
-            150,
-            1668,
-            303
+            120,
+            104,
+            407,
+            218
           ]
         },
         {
-          "txt": "local ?",
-          "taille": 150,
+          "txt": "on parlait",
+          "taille": 112,
           "boite": [
-            641,
-            303,
-            1279,
-            456
+            120,
+            218,
+            847,
+            332
+          ]
+        },
+        {
+          "txt": "de votre",
+          "taille": 112,
+          "boite": [
+            120,
+            332,
+            719,
+            447
+          ]
+        },
+        {
+          "txt": "entreprise ?",
+          "taille": 112,
+          "boite": [
+            120,
+            447,
+            936,
+            561
+          ]
+        },
+        {
+          "txt": "Notre équipe vous attendsur le stand.",
+          "taille": 50,
+          "boite": [
+            230,
+            612,
+            1028,
+            724
+          ]
+        },
+        {
+          "txt": "+22176 626 35 68 · 77 112 64 34",
+          "taille": 40,
+          "boite": [
+            120,
+            770,
+            800,
+            814
+          ]
+        },
+        {
+          "txt": "volkeno.com",
+          "taille": 46,
+          "boite": [
+            220,
+            875,
+            524,
+            921
+          ]
+        },
+        {
+          "txt": "Scannez pourdemander un devis",
+          "taille": 44,
+          "boite": [
+            1271,
+            666,
+            1789,
+            761
+          ]
+        },
+        {
+          "txt": "volkeno.com/demander-un-devis",
+          "taille": 28,
+          "boite": [
+            1300,
+            779,
+            1760,
+            807
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 1.4,
+      "nom": "01-vous-produisez-local",
+      "textes": [
+        {
+          "txt": "Vous produisez",
+          "taille": 168,
+          "boite": [
+            167,
+            92,
+            1753,
+            263
+          ]
+        },
+        {
+          "txt": "Local ?",
+          "taille": 300,
+          "boite": [
+            322,
+            262,
+            1598,
+            568
           ]
         },
         {
           "txt": "Jus de bissap",
-          "taille": 26,
+          "taille": 29,
           "boite": [
-            213,
-            780,
-            387,
-            810
+            176,
+            838,
+            372,
+            870
           ]
         },
         {
           "txt": "Fonio & céréales",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            462,
-            765,
-            666,
-            825
+            437,
+            839,
+            660,
+            899
           ]
         },
         {
           "txt": "Couture & mode",
-          "taille": 26,
+          "taille": 28,
           "boite": [
-            726,
-            780,
-            930,
-            810
+            719,
+            882,
+            932,
+            945
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 2.6,
+      "nom": "02-produits",
+      "textes": [
+        {
+          "txt": "Vous produisez",
+          "taille": 168,
+          "boite": [
+            167,
+            92,
+            1753,
+            263
+          ]
+        },
+        {
+          "txt": "Local ?",
+          "taille": 300,
+          "boite": [
+            322,
+            262,
+            1598,
+            568
+          ]
+        },
+        {
+          "txt": "Jus de bissap",
+          "taille": 27,
+          "boite": [
+            178,
+            855,
+            372,
+            885
+          ]
+        },
+        {
+          "txt": "Fonio & céréales",
+          "taille": 27,
+          "boite": [
+            437,
+            828,
+            661,
+            888
+          ]
+        },
+        {
+          "txt": "Couture & mode",
+          "taille": 27,
+          "boite": [
+            711,
+            840,
+            935,
+            900
           ]
         },
         {
           "txt": "Savon au karité",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            994,
-            780,
-            1190,
-            810
+            986,
+            843,
+            1208,
+            873
           ]
         },
         {
           "txt": "Produits de la mer",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            1254,
-            765,
-            1458,
-            825
+            1259,
+            840,
+            1483,
+            900
           ]
         },
         {
           "txt": "Livraison & transport",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            1518,
-            762,
-            1722,
-            822
+            1533,
+            828,
+            1757,
+            888
           ]
         },
         {
@@ -127,86 +315,86 @@
     },
     {
       "t": 4.8,
-      "nom": "02-plus-loin",
+      "nom": "03-plus-loin",
       "textes": [
         {
           "txt": "Et si vous alliez",
-          "taille": 140,
+          "taille": 168,
           "boite": [
-            275,
-            170,
-            1645,
-            313
+            139,
+            92,
+            1781,
+            263
           ]
         },
         {
-          "txt": "plus loin ?",
-          "taille": 140,
+          "txt": "Plus loin ?",
+          "taille": 274,
           "boite": [
-            520,
-            313,
-            1400,
-            456
+            99,
+            262,
+            1821,
+            541
           ]
         },
         {
           "txt": "Jus de bissap",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            213,
-            780,
-            387,
-            810
+            178,
+            849,
+            372,
+            879
           ]
         },
         {
           "txt": "Fonio & céréales",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            462,
-            765,
-            666,
-            825
+            437,
+            834,
+            661,
+            894
           ]
         },
         {
           "txt": "Couture & mode",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            726,
-            780,
-            930,
-            810
+            712,
+            834,
+            936,
+            894
           ]
         },
         {
           "txt": "Savon au karité",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            1001,
-            780,
-            1196,
-            810
+            998,
+            849,
+            1220,
+            879
           ]
         },
         {
           "txt": "Produits de la mer",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            1287,
-            765,
-            1491,
-            825
+            1306,
+            834,
+            1530,
+            894
           ]
         },
         {
           "txt": "Livraison & transport",
-          "taille": 26,
+          "taille": 27,
           "boite": [
-            1614,
-            765,
-            1818,
-            825
+            1651,
+            834,
+            1875,
+            894
           ]
         },
         {
@@ -230,7 +418,9 @@
           ]
         }
       ],
-      "problemes": [],
+      "problemes": [
+        "hors zone de sécurité : « Livraison & transport » [1651,834,1875,894]"
+      ],
       "qr": {
         "url": "https://volkeno.com/demander-un-devis",
         "modules": 29,
@@ -241,46 +431,36 @@
     },
     {
       "t": 7.6,
-      "nom": "03-commandes-dispersees",
+      "nom": "04-commandes-dispersees",
       "textes": [
         {
           "txt": "Vous vous reconnaissez ?",
-          "taille": 34,
+          "taille": 38,
           "boite": [
             96,
-            118,
-            707,
-            152
+            150,
+            775,
+            188
           ]
         },
         {
           "txt": "Commandes",
-          "taille": 104,
+          "taille": 124,
           "boite": [
             96,
-            210,
-            834,
-            316
+            300,
+            965,
+            426
           ]
         },
         {
           "txt": "dispersées ?",
-          "taille": 104,
+          "taille": 124,
           "boite": [
             96,
-            316,
-            847,
-            422
-          ]
-        },
-        {
-          "txt": "Messages, appels, cahiers… et des oublis.",
-          "taille": 40,
-          "boite": [
-            96,
-            450,
-            1016,
-            500
+            426,
+            976,
+            553
           ]
         },
         {
@@ -315,56 +495,46 @@
     },
     {
       "t": 10.6,
-      "nom": "04-stocks",
+      "nom": "05-stocks",
       "textes": [
         {
           "txt": "Vous vous reconnaissez ?",
-          "taille": 34,
+          "taille": 38,
           "boite": [
             96,
-            118,
-            707,
-            152
+            150,
+            775,
+            188
           ]
         },
         {
           "txt": "Stocks",
-          "taille": 104,
+          "taille": 124,
           "boite": [
             96,
-            210,
-            532,
-            316
+            300,
+            609,
+            426
           ]
         },
         {
           "txt": "difficiles",
-          "taille": 104,
+          "taille": 124,
           "boite": [
             96,
-            316,
-            689,
-            422
+            426,
+            790,
+            553
           ]
         },
         {
           "txt": "à suivre ?",
-          "taille": 104,
+          "taille": 124,
           "boite": [
             96,
-            422,
-            686,
-            528
-          ]
-        },
-        {
-          "txt": "Ruptures et pertes imprévues.",
-          "taille": 40,
-          "boite": [
-            96,
-            556,
-            1016,
-            606
+            553,
+            788,
+            679
           ]
         },
         {
@@ -399,46 +569,36 @@
     },
     {
       "t": 13.6,
-      "nom": "05-taches-repetitives",
+      "nom": "06-taches-repetitives",
       "textes": [
         {
           "txt": "Vous vous reconnaissez ?",
-          "taille": 34,
+          "taille": 38,
           "boite": [
             96,
-            118,
-            707,
-            152
+            150,
+            775,
+            188
           ]
         },
         {
           "txt": "Trop de tâches",
-          "taille": 100,
+          "taille": 108,
           "boite": [
             96,
-            210,
-            1013,
-            312
+            300,
+            1071,
+            410
           ]
         },
         {
           "txt": "répétitives ?",
-          "taille": 100,
+          "taille": 108,
           "boite": [
             96,
-            312,
-            844,
-            414
-          ]
-        },
-        {
-          "txt": "Des heures à tout recopier.",
-          "taille": 40,
-          "boite": [
-            96,
-            442,
-            1016,
-            492
+            410,
+            890,
+            520
           ]
         },
         {
@@ -473,7 +633,7 @@
     },
     {
       "t": 15.9,
-      "nom": "06-outils",
+      "nom": "07-vos-outils",
       "textes": [
         {
           "txt": "Et si vos outils",
@@ -536,67 +696,91 @@
       }
     },
     {
-      "t": 19.6,
-      "nom": "07-centralisez",
+      "t": 17.7,
+      "nom": "08-avant-commandes",
       "textes": [
+        {
+          "txt": "Avant",
+          "taille": 26,
+          "boite": [
+            96,
+            254,
+            244,
+            301
+          ]
+        },
         {
           "txt": "Commandes dispersées",
-          "taille": 28,
+          "taille": 50,
+          "boite": [
+            264,
+            250,
+            890,
+            305
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 19.9,
+      "nom": "09-apres-commandes",
+      "textes": [
+        {
+          "txt": "Après",
+          "taille": 26,
           "boite": [
             96,
-            200,
-            427,
-            228
+            345,
+            240,
+            392
           ]
         },
         {
-          "txt": "→",
-          "taille": 28,
-          "boite": [
-            443,
-            200,
-            469,
-            228
-          ]
-        },
-        {
-          "txt": "Commandes centralisées",
-          "taille": 28,
-          "boite": [
-            485,
-            190,
-            865,
-            238
-          ]
-        },
-        {
-          "txt": "Centralisez",
-          "taille": 84,
+          "txt": "Commandes",
+          "taille": 108,
           "boite": [
             96,
-            268,
-            704,
-            354
+            414,
+            863,
+            524
           ]
         },
         {
-          "txt": "vos commandes.",
-          "taille": 84,
+          "txt": "centralisées",
+          "taille": 108,
           "boite": [
             96,
-            354,
-            929,
-            439
-          ]
-        },
-        {
-          "txt": "Toutes vos commandes au même endroit, avec leur ",
-          "taille": 40,
-          "boite": [
-            96,
-            469,
-            936,
-            569
+            524,
+            946,
+            634
           ]
         },
         {
@@ -640,67 +824,27 @@
       }
     },
     {
-      "t": 23.4,
-      "nom": "08-pilotez",
+      "t": 21.7,
+      "nom": "10-avant-stocks",
       "textes": [
         {
-          "txt": "Gestion manuelle",
-          "taille": 28,
+          "txt": "Avant",
+          "taille": 26,
           "boite": [
             96,
-            200,
-            334,
-            228
+            251,
+            244,
+            298
           ]
         },
         {
-          "txt": "→",
-          "taille": 28,
+          "txt": "Stocks suivis manuellement",
+          "taille": 44,
           "boite": [
-            350,
-            200,
-            376,
-            228
-          ]
-        },
-        {
-          "txt": "Suivi numérique",
-          "taille": 28,
-          "boite": [
-            392,
-            190,
-            647,
-            238
-          ]
-        },
-        {
-          "txt": "Pilotez",
-          "taille": 92,
-          "boite": [
-            96,
-            268,
-            504,
-            362
-          ]
-        },
-        {
-          "txt": "votre activité.",
-          "taille": 92,
-          "boite": [
-            96,
-            362,
-            926,
-            456
-          ]
-        },
-        {
-          "txt": "Stocks, ventes et alertes en temps réel.",
-          "taille": 40,
-          "boite": [
-            96,
-            486,
-            936,
-            536
+            264,
+            250,
+            911,
+            298
           ]
         },
         {
@@ -744,77 +888,47 @@
       }
     },
     {
-      "t": 27.8,
-      "nom": "09-facilitez",
+      "t": 23.9,
+      "nom": "11-apres-tableau-de-bord",
       "textes": [
         {
-          "txt": "Ventes limitées",
-          "taille": 28,
+          "txt": "Après",
+          "taille": 26,
           "boite": [
             96,
-            200,
-            306,
-            228
+            338,
+            240,
+            385
           ]
         },
         {
-          "txt": "→",
-          "taille": 28,
-          "boite": [
-            322,
-            200,
-            348,
-            228
-          ]
-        },
-        {
-          "txt": "Catalogue et commande en ligne",
-          "taille": 28,
-          "boite": [
-            364,
-            190,
-            844,
-            238
-          ]
-        },
-        {
-          "txt": "Facilitez",
-          "taille": 96,
+          "txt": "Tableau",
+          "taille": 108,
           "boite": [
             96,
-            268,
-            609,
-            366
+            407,
+            631,
+            518
           ]
         },
         {
-          "txt": "vos ventes.",
-          "taille": 96,
+          "txt": "de bord",
+          "taille": 108,
           "boite": [
             96,
-            366,
-            764,
-            464
-          ]
-        },
-        {
-          "txt": "Vos clients commandent en ligne, 24 h/24.",
-          "taille": 40,
-          "boite": [
-            96,
-            494,
-            936,
-            544
+            518,
+            624,
+            628
           ]
         },
         {
           "txt": "Exemple d'interface",
           "taille": 20,
           "boite": [
-            940,
-            900,
-            1560,
-            920
+            980,
+            858,
+            1824,
+            878
           ]
         },
         {
@@ -848,8 +962,146 @@
       }
     },
     {
-      "t": 30.2,
-      "nom": "10-logo",
+      "t": 25.7,
+      "nom": "12-avant-processus",
+      "textes": [
+        {
+          "txt": "Avant",
+          "taille": 26,
+          "boite": [
+            96,
+            254,
+            244,
+            301
+          ]
+        },
+        {
+          "txt": "Processus répétitifs",
+          "taille": 50,
+          "boite": [
+            264,
+            250,
+            781,
+            305
+          ]
+        },
+        {
+          "txt": "Exemple d'interface",
+          "taille": 20,
+          "boite": [
+            980,
+            858,
+            1824,
+            878
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 28.2,
+      "nom": "13-apres-automatisation",
+      "textes": [
+        {
+          "txt": "Après",
+          "taille": 26,
+          "boite": [
+            96,
+            345,
+            240,
+            392
+          ]
+        },
+        {
+          "txt": "Opérations",
+          "taille": 104,
+          "boite": [
+            96,
+            414,
+            817,
+            520
+          ]
+        },
+        {
+          "txt": "automatisées",
+          "taille": 104,
+          "boite": [
+            96,
+            520,
+            955,
+            626
+          ]
+        },
+        {
+          "txt": "Exemple d'interface",
+          "taille": 20,
+          "boite": [
+            980,
+            858,
+            1824,
+            878
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 29.9,
+      "nom": "14-logo",
       "textes": [],
       "problemes": [],
       "qr": {
@@ -861,81 +1113,47 @@
       }
     },
     {
-      "t": 31.8,
-      "nom": "11-solutions",
-      "textes": [
-        {
-          "txt": "Des solutions",
-          "taille": 80,
-          "boite": [
-            760,
-            418,
-            1437,
-            499
-          ]
-        },
-        {
-          "txt": "numériques adaptées",
-          "taille": 80,
-          "boite": [
-            760,
-            499,
-            1806,
-            581
-          ]
-        },
-        {
-          "txt": "à votre activité.",
-          "taille": 80,
-          "boite": [
-            760,
-            581,
-            1568,
-            662
-          ]
-        }
-      ],
-      "problemes": [],
-      "qr": {
-        "url": "https://volkeno.com/demander-un-devis",
-        "modules": 29,
-        "version": 3,
-        "cell": 14,
-        "size": 518
-      }
-    },
-    {
-      "t": 34.2,
-      "nom": "12-signature",
+      "t": 33.6,
+      "nom": "15-signature",
       "textes": [
         {
           "txt": "Basés à Dakar.",
           "taille": 40,
           "boite": [
             677,
-            360,
+            262,
             1243,
-            400
+            302
           ]
         },
         {
           "txt": "Le digital aussi",
-          "taille": 130,
+          "taille": 112,
           "boite": [
-            360,
-            434,
-            1560,
-            567
+            443,
+            324,
+            1477,
+            438
           ]
         },
         {
-          "txt": "se consomme local.",
-          "taille": 130,
+          "txt": "se consomme",
+          "taille": 112,
           "boite": [
-            177,
-            567,
-            1743,
-            699
+            517,
+            438,
+            1403,
+            552
+          ]
+        },
+        {
+          "txt": "local.",
+          "taille": 241,
+          "boite": [
+            491,
+            552,
+            1429,
+            793
           ]
         }
       ],
@@ -949,47 +1167,57 @@
       }
     },
     {
-      "t": 37.8,
-      "nom": "13-parlons-en",
+      "t": 36.6,
+      "nom": "16-conversion",
       "textes": [
         {
-          "txt": "Vous avez un projet ?",
-          "taille": 66,
+          "txt": "Et si",
+          "taille": 112,
           "boite": [
             120,
-            122,
-            1180,
-            191
+            104,
+            407,
+            218
           ]
         },
         {
-          "txt": "Parlons-en",
-          "taille": 102,
+          "txt": "on parlait",
+          "taille": 112,
           "boite": [
             120,
-            222,
-            823,
-            326
+            218,
+            847,
+            332
           ]
         },
         {
-          "txt": "sur notre stand.",
-          "taille": 102,
+          "txt": "de votre",
+          "taille": 112,
           "boite": [
             120,
-            326,
-            1165,
-            430
+            332,
+            719,
+            447
           ]
         },
         {
-          "txt": "Notre équipe est làpour vous écouter.",
+          "txt": "entreprise ?",
+          "taille": 112,
+          "boite": [
+            120,
+            447,
+            936,
+            561
+          ]
+        },
+        {
+          "txt": "Notre équipe vous attendsur le stand.",
           "taille": 50,
           "boite": [
-            215,
-            548,
-            817,
-            660
+            226,
+            612,
+            1024,
+            724
           ]
         },
         {
@@ -1024,66 +1252,76 @@
     },
     {
       "t": 44.9,
-      "nom": "14-ecran-final",
+      "nom": "17-ecran-final",
       "textes": [
         {
-          "txt": "Vous avez un projet ?",
-          "taille": 66,
+          "txt": "Et si",
+          "taille": 112,
           "boite": [
             120,
-            122,
-            1180,
-            191
+            104,
+            407,
+            218
           ]
         },
         {
-          "txt": "Parlons-en",
-          "taille": 102,
+          "txt": "on parlait",
+          "taille": 112,
           "boite": [
             120,
-            222,
-            823,
-            326
+            218,
+            847,
+            332
           ]
         },
         {
-          "txt": "sur notre stand.",
-          "taille": 102,
+          "txt": "de votre",
+          "taille": 112,
           "boite": [
             120,
-            326,
-            1165,
-            430
+            332,
+            719,
+            447
           ]
         },
         {
-          "txt": "Notre équipe est làpour vous écouter.",
+          "txt": "entreprise ?",
+          "taille": 112,
+          "boite": [
+            120,
+            447,
+            936,
+            561
+          ]
+        },
+        {
+          "txt": "Notre équipe vous attendsur le stand.",
           "taille": 50,
           "boite": [
             230,
-            548,
-            832,
-            660
+            612,
+            1028,
+            724
           ]
         },
         {
           "txt": "+22176 626 35 68 · 77 112 64 34",
-          "taille": 46,
+          "taille": 40,
           "boite": [
             120,
-            712,
-            905,
-            766
+            770,
+            800,
+            814
           ]
         },
         {
           "txt": "volkeno.com",
-          "taille": 54,
+          "taille": 46,
           "boite": [
-            242,
-            843,
-            599,
-            897
+            220,
+            875,
+            524,
+            921
           ]
         },
         {

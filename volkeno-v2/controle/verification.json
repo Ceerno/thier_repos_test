@@ -1,7 +1,7 @@
 {
-  "fichier": "volkeno-consommer-local-v2.mp4",
+  "fichier": "volkeno-consommer-local-v2.1.mp4",
   "duree_s": 45.0,
-  "taille_octets": 7393349,
+  "taille_octets": 7396546,
   "video": {
     "codec": "h264",
     "profil": "High",
@@ -29,7 +29,27 @@
       "ok": true
     },
     {
+      "t": 35.5,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
       "t": 36.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 36.5,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 37.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 37.5,
       "lu": "https://volkeno.com/demander-un-devis",
       "ok": true
     },
@@ -39,7 +59,37 @@
       "ok": true
     },
     {
+      "t": 38.5,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 39.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 39.5,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
       "t": 40.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 40.5,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 41.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 41.5,
       "lu": "https://volkeno.com/demander-un-devis",
       "ok": true
     },
@@ -49,7 +99,27 @@
       "ok": true
     },
     {
+      "t": 42.5,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 43.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 43.5,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
       "t": 44.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 44.5,
       "lu": "https://volkeno.com/demander-un-devis",
       "ok": true
     },
@@ -105,5 +175,39 @@
       "ok": true
     }
   ],
-  "boucle_ecart_moyen_sur_255": 0.136
+  "boucle_ecart_moyen_sur_255": 0.22,
+  "fluidite": {
+    "images_analysees": 1125,
+    "ecart_median": 0.23,
+    "ecart_p95": 9.28,
+    "ecart_max": 20.06,
+    "plus_grands_ecarts": [
+      {
+        "t": 34.76,
+        "ecart": 20.06
+      },
+      {
+        "t": 5.2,
+        "ecart": 19.4
+      },
+      {
+        "t": 17.0,
+        "ecart": 19.22
+      },
+      {
+        "t": 17.04,
+        "ecart": 18.95
+      },
+      {
+        "t": 34.8,
+        "ecart": 18.75
+      },
+      {
+        "t": 5.12,
+        "ecart": 18.26
+      }
+    ],
+    "images_figees_consecutives_max": 25,
+    "ecart_derniere_vers_premiere": 0.24
+  }
 }
