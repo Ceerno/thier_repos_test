@@ -1,0 +1,15 @@
+{
+  "name": "volkeno-consommer-local-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Vidéo motion design 45 s pour le stand Volkeno (Mois du Consommer Local 2026)",
+  "scripts": {
+    "controle": "node render/controle.js",
+    "rendu": "node render/rendu.js",
+    "verifier": "python3 render/verifier.py",
+    "test-retour": "node render/test_retour.js"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

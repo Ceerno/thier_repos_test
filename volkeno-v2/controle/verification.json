@@ -1,0 +1,109 @@
+{
+  "fichier": "volkeno-consommer-local-v2.mp4",
+  "duree_s": 45.0,
+  "taille_octets": 7393349,
+  "video": {
+    "codec": "h264",
+    "profil": "High",
+    "niveau": 41,
+    "resolution": "1920×1080",
+    "pixels": "yuv420p",
+    "images_par_seconde": 25.0,
+    "images": 1125
+  },
+  "audio": [
+    {
+      "codec": "aac"
+    }
+  ],
+  "qr_attendu": "https://volkeno.com/demander-un-devis",
+  "qr": [
+    {
+      "t": 0.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 35.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 36.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 38.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 40.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 42.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 44.0,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    },
+    {
+      "t": 44.96,
+      "lu": "https://volkeno.com/demander-un-devis",
+      "ok": true
+    }
+  ],
+  "qr_distance": [
+    {
+      "echelle": 1.0,
+      "largeur_qr_px": 518,
+      "ok": true
+    },
+    {
+      "echelle": 0.5,
+      "largeur_qr_px": 259,
+      "ok": true
+    },
+    {
+      "echelle": 0.35,
+      "largeur_qr_px": 181,
+      "ok": true
+    },
+    {
+      "echelle": 0.25,
+      "largeur_qr_px": 130,
+      "ok": true
+    },
+    {
+      "echelle": 0.2,
+      "largeur_qr_px": 104,
+      "ok": true
+    },
+    {
+      "echelle": 0.15,
+      "largeur_qr_px": 78,
+      "ok": true
+    }
+  ],
+  "qr_biais": [
+    {
+      "compression_horizontale": 0.85,
+      "ok": true
+    },
+    {
+      "compression_horizontale": 0.7,
+      "ok": true
+    },
+    {
+      "compression_horizontale": 0.55,
+      "ok": true
+    }
+  ],
+  "boucle_ecart_moyen_sur_255": 0.136
+}

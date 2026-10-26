@@ -1,0 +1,1120 @@
+{
+  "polices": [
+    "Caveat 600",
+    "Inter 500",
+    "Inter 600",
+    "Inter 700",
+    "Montserrat 600",
+    "Montserrat 700",
+    "Montserrat 800",
+    "Montserrat 900"
+  ],
+  "requetes_bloquees": [],
+  "instants": [
+    {
+      "t": 2,
+      "nom": "01-accroche",
+      "textes": [
+        {
+          "txt": "Vous produisez",
+          "taille": 150,
+          "boite": [
+            252,
+            150,
+            1668,
+            303
+          ]
+        },
+        {
+          "txt": "local ?",
+          "taille": 150,
+          "boite": [
+            641,
+            303,
+            1279,
+            456
+          ]
+        },
+        {
+          "txt": "Jus de bissap",
+          "taille": 26,
+          "boite": [
+            213,
+            780,
+            387,
+            810
+          ]
+        },
+        {
+          "txt": "Fonio & céréales",
+          "taille": 26,
+          "boite": [
+            462,
+            765,
+            666,
+            825
+          ]
+        },
+        {
+          "txt": "Couture & mode",
+          "taille": 26,
+          "boite": [
+            726,
+            780,
+            930,
+            810
+          ]
+        },
+        {
+          "txt": "Savon au karité",
+          "taille": 26,
+          "boite": [
+            994,
+            780,
+            1190,
+            810
+          ]
+        },
+        {
+          "txt": "Produits de la mer",
+          "taille": 26,
+          "boite": [
+            1254,
+            765,
+            1458,
+            825
+          ]
+        },
+        {
+          "txt": "Livraison & transport",
+          "taille": 26,
+          "boite": [
+            1518,
+            762,
+            1722,
+            822
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 4.8,
+      "nom": "02-plus-loin",
+      "textes": [
+        {
+          "txt": "Et si vous alliez",
+          "taille": 140,
+          "boite": [
+            275,
+            170,
+            1645,
+            313
+          ]
+        },
+        {
+          "txt": "plus loin ?",
+          "taille": 140,
+          "boite": [
+            520,
+            313,
+            1400,
+            456
+          ]
+        },
+        {
+          "txt": "Jus de bissap",
+          "taille": 26,
+          "boite": [
+            213,
+            780,
+            387,
+            810
+          ]
+        },
+        {
+          "txt": "Fonio & céréales",
+          "taille": 26,
+          "boite": [
+            462,
+            765,
+            666,
+            825
+          ]
+        },
+        {
+          "txt": "Couture & mode",
+          "taille": 26,
+          "boite": [
+            726,
+            780,
+            930,
+            810
+          ]
+        },
+        {
+          "txt": "Savon au karité",
+          "taille": 26,
+          "boite": [
+            1001,
+            780,
+            1196,
+            810
+          ]
+        },
+        {
+          "txt": "Produits de la mer",
+          "taille": 26,
+          "boite": [
+            1287,
+            765,
+            1491,
+            825
+          ]
+        },
+        {
+          "txt": "Livraison & transport",
+          "taille": 26,
+          "boite": [
+            1614,
+            765,
+            1818,
+            825
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 7.6,
+      "nom": "03-commandes-dispersees",
+      "textes": [
+        {
+          "txt": "Vous vous reconnaissez ?",
+          "taille": 34,
+          "boite": [
+            96,
+            118,
+            707,
+            152
+          ]
+        },
+        {
+          "txt": "Commandes",
+          "taille": 104,
+          "boite": [
+            96,
+            210,
+            834,
+            316
+          ]
+        },
+        {
+          "txt": "dispersées ?",
+          "taille": 104,
+          "boite": [
+            96,
+            316,
+            847,
+            422
+          ]
+        },
+        {
+          "txt": "Messages, appels, cahiers… et des oublis.",
+          "taille": 40,
+          "boite": [
+            96,
+            450,
+            1016,
+            500
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 10.6,
+      "nom": "04-stocks",
+      "textes": [
+        {
+          "txt": "Vous vous reconnaissez ?",
+          "taille": 34,
+          "boite": [
+            96,
+            118,
+            707,
+            152
+          ]
+        },
+        {
+          "txt": "Stocks",
+          "taille": 104,
+          "boite": [
+            96,
+            210,
+            532,
+            316
+          ]
+        },
+        {
+          "txt": "difficiles",
+          "taille": 104,
+          "boite": [
+            96,
+            316,
+            689,
+            422
+          ]
+        },
+        {
+          "txt": "à suivre ?",
+          "taille": 104,
+          "boite": [
+            96,
+            422,
+            686,
+            528
+          ]
+        },
+        {
+          "txt": "Ruptures et pertes imprévues.",
+          "taille": 40,
+          "boite": [
+            96,
+            556,
+            1016,
+            606
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 13.6,
+      "nom": "05-taches-repetitives",
+      "textes": [
+        {
+          "txt": "Vous vous reconnaissez ?",
+          "taille": 34,
+          "boite": [
+            96,
+            118,
+            707,
+            152
+          ]
+        },
+        {
+          "txt": "Trop de tâches",
+          "taille": 100,
+          "boite": [
+            96,
+            210,
+            1013,
+            312
+          ]
+        },
+        {
+          "txt": "répétitives ?",
+          "taille": 100,
+          "boite": [
+            96,
+            312,
+            844,
+            414
+          ]
+        },
+        {
+          "txt": "Des heures à tout recopier.",
+          "taille": 40,
+          "boite": [
+            96,
+            442,
+            1016,
+            492
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 15.9,
+      "nom": "06-outils",
+      "textes": [
+        {
+          "txt": "Et si vos outils",
+          "taille": 124,
+          "boite": [
+            392,
+            250,
+            1528,
+            376
+          ]
+        },
+        {
+          "txt": "travaillaient",
+          "taille": 124,
+          "boite": [
+            439,
+            376,
+            1481,
+            503
+          ]
+        },
+        {
+          "txt": "pour vous ?",
+          "taille": 124,
+          "boite": [
+            522,
+            503,
+            1398,
+            629
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 19.6,
+      "nom": "07-centralisez",
+      "textes": [
+        {
+          "txt": "Commandes dispersées",
+          "taille": 28,
+          "boite": [
+            96,
+            200,
+            427,
+            228
+          ]
+        },
+        {
+          "txt": "→",
+          "taille": 28,
+          "boite": [
+            443,
+            200,
+            469,
+            228
+          ]
+        },
+        {
+          "txt": "Commandes centralisées",
+          "taille": 28,
+          "boite": [
+            485,
+            190,
+            865,
+            238
+          ]
+        },
+        {
+          "txt": "Centralisez",
+          "taille": 84,
+          "boite": [
+            96,
+            268,
+            704,
+            354
+          ]
+        },
+        {
+          "txt": "vos commandes.",
+          "taille": 84,
+          "boite": [
+            96,
+            354,
+            929,
+            439
+          ]
+        },
+        {
+          "txt": "Toutes vos commandes au même endroit, avec leur ",
+          "taille": 40,
+          "boite": [
+            96,
+            469,
+            936,
+            569
+          ]
+        },
+        {
+          "txt": "Exemple d'interface",
+          "taille": 20,
+          "boite": [
+            980,
+            858,
+            1824,
+            878
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 23.4,
+      "nom": "08-pilotez",
+      "textes": [
+        {
+          "txt": "Gestion manuelle",
+          "taille": 28,
+          "boite": [
+            96,
+            200,
+            334,
+            228
+          ]
+        },
+        {
+          "txt": "→",
+          "taille": 28,
+          "boite": [
+            350,
+            200,
+            376,
+            228
+          ]
+        },
+        {
+          "txt": "Suivi numérique",
+          "taille": 28,
+          "boite": [
+            392,
+            190,
+            647,
+            238
+          ]
+        },
+        {
+          "txt": "Pilotez",
+          "taille": 92,
+          "boite": [
+            96,
+            268,
+            504,
+            362
+          ]
+        },
+        {
+          "txt": "votre activité.",
+          "taille": 92,
+          "boite": [
+            96,
+            362,
+            926,
+            456
+          ]
+        },
+        {
+          "txt": "Stocks, ventes et alertes en temps réel.",
+          "taille": 40,
+          "boite": [
+            96,
+            486,
+            936,
+            536
+          ]
+        },
+        {
+          "txt": "Exemple d'interface",
+          "taille": 20,
+          "boite": [
+            980,
+            858,
+            1824,
+            878
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 27.8,
+      "nom": "09-facilitez",
+      "textes": [
+        {
+          "txt": "Ventes limitées",
+          "taille": 28,
+          "boite": [
+            96,
+            200,
+            306,
+            228
+          ]
+        },
+        {
+          "txt": "→",
+          "taille": 28,
+          "boite": [
+            322,
+            200,
+            348,
+            228
+          ]
+        },
+        {
+          "txt": "Catalogue et commande en ligne",
+          "taille": 28,
+          "boite": [
+            364,
+            190,
+            844,
+            238
+          ]
+        },
+        {
+          "txt": "Facilitez",
+          "taille": 96,
+          "boite": [
+            96,
+            268,
+            609,
+            366
+          ]
+        },
+        {
+          "txt": "vos ventes.",
+          "taille": 96,
+          "boite": [
+            96,
+            366,
+            764,
+            464
+          ]
+        },
+        {
+          "txt": "Vos clients commandent en ligne, 24 h/24.",
+          "taille": 40,
+          "boite": [
+            96,
+            494,
+            936,
+            544
+          ]
+        },
+        {
+          "txt": "Exemple d'interface",
+          "taille": 20,
+          "boite": [
+            940,
+            900,
+            1560,
+            920
+          ]
+        },
+        {
+          "txt": "Volkeno",
+          "taille": 34,
+          "boite": [
+            154,
+            984,
+            297,
+            1018
+          ]
+        },
+        {
+          "txt": "Solutions numériques pour les entreprises locale",
+          "taille": 30,
+          "boite": [
+            331,
+            986,
+            1055,
+            1016
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 30.2,
+      "nom": "10-logo",
+      "textes": [],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 31.8,
+      "nom": "11-solutions",
+      "textes": [
+        {
+          "txt": "Des solutions",
+          "taille": 80,
+          "boite": [
+            760,
+            418,
+            1437,
+            499
+          ]
+        },
+        {
+          "txt": "numériques adaptées",
+          "taille": 80,
+          "boite": [
+            760,
+            499,
+            1806,
+            581
+          ]
+        },
+        {
+          "txt": "à votre activité.",
+          "taille": 80,
+          "boite": [
+            760,
+            581,
+            1568,
+            662
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 34.2,
+      "nom": "12-signature",
+      "textes": [
+        {
+          "txt": "Basés à Dakar.",
+          "taille": 40,
+          "boite": [
+            677,
+            360,
+            1243,
+            400
+          ]
+        },
+        {
+          "txt": "Le digital aussi",
+          "taille": 130,
+          "boite": [
+            360,
+            434,
+            1560,
+            567
+          ]
+        },
+        {
+          "txt": "se consomme local.",
+          "taille": 130,
+          "boite": [
+            177,
+            567,
+            1743,
+            699
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 37.8,
+      "nom": "13-parlons-en",
+      "textes": [
+        {
+          "txt": "Vous avez un projet ?",
+          "taille": 66,
+          "boite": [
+            120,
+            122,
+            1180,
+            191
+          ]
+        },
+        {
+          "txt": "Parlons-en",
+          "taille": 102,
+          "boite": [
+            120,
+            222,
+            823,
+            326
+          ]
+        },
+        {
+          "txt": "sur notre stand.",
+          "taille": 102,
+          "boite": [
+            120,
+            326,
+            1165,
+            430
+          ]
+        },
+        {
+          "txt": "Notre équipe est làpour vous écouter.",
+          "taille": 50,
+          "boite": [
+            215,
+            548,
+            817,
+            660
+          ]
+        },
+        {
+          "txt": "Scannez pourdemander un devis",
+          "taille": 44,
+          "boite": [
+            1271,
+            666,
+            1789,
+            761
+          ]
+        },
+        {
+          "txt": "volkeno.com/demander-un-devis",
+          "taille": 28,
+          "boite": [
+            1300,
+            779,
+            1760,
+            807
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    },
+    {
+      "t": 44.9,
+      "nom": "14-ecran-final",
+      "textes": [
+        {
+          "txt": "Vous avez un projet ?",
+          "taille": 66,
+          "boite": [
+            120,
+            122,
+            1180,
+            191
+          ]
+        },
+        {
+          "txt": "Parlons-en",
+          "taille": 102,
+          "boite": [
+            120,
+            222,
+            823,
+            326
+          ]
+        },
+        {
+          "txt": "sur notre stand.",
+          "taille": 102,
+          "boite": [
+            120,
+            326,
+            1165,
+            430
+          ]
+        },
+        {
+          "txt": "Notre équipe est làpour vous écouter.",
+          "taille": 50,
+          "boite": [
+            230,
+            548,
+            832,
+            660
+          ]
+        },
+        {
+          "txt": "+22176 626 35 68 · 77 112 64 34",
+          "taille": 46,
+          "boite": [
+            120,
+            712,
+            905,
+            766
+          ]
+        },
+        {
+          "txt": "volkeno.com",
+          "taille": 54,
+          "boite": [
+            242,
+            843,
+            599,
+            897
+          ]
+        },
+        {
+          "txt": "Scannez pourdemander un devis",
+          "taille": 44,
+          "boite": [
+            1271,
+            666,
+            1789,
+            761
+          ]
+        },
+        {
+          "txt": "volkeno.com/demander-un-devis",
+          "taille": 28,
+          "boite": [
+            1300,
+            779,
+            1760,
+            807
+          ]
+        }
+      ],
+      "problemes": [],
+      "qr": {
+        "url": "https://volkeno.com/demander-un-devis",
+        "modules": 29,
+        "version": 3,
+        "cell": 14,
+        "size": 518
+      }
+    }
+  ]
+}
