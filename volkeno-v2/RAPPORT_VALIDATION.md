@@ -1,4 +1,4 @@
-# Rapport de validation — volkeno-consommer-local-v2.mp4
+# Rapport de validation — volkeno-consommer-local-v2.1.mp4
 
 Les contrôles ont été faits automatiquement : `render/controle.js`, `render/test_retour.js` et `render/verifier.py`. Les résultats bruts sont dans `controle/controle.json` et `controle/verification.json`.
 
@@ -7,71 +7,59 @@ Les contrôles ont été faits automatiquement : `render/controle.js`, `render/t
 | Élément | Résultat |
 |---|---|
 | Durée réelle | **45,000 s** (1125 images) |
-| Résolution | **1920 × 1080** (16:9) |
-| Codec vidéo | **H.264**, profil High, niveau 4.1, yuv420p |
-| Fréquence d'images | **25 i/s** |
-| Audio | Piste AAC muette, ajoutée pour les lecteurs de salon qui refusent les fichiers sans son. La vidéo reste silencieuse |
-| Taille | ≈ 7,4 Mo |
-| Dépendances à la lecture | Aucune : MP4 autonome, aucun accès réseau |
+| Résolution | **1920 × 1080** |
+| Codec | **H.264**, profil High, niveau 4.1, yuv420p |
+| Fréquence | **25 i/s** |
+| Audio | Piste AAC muette, pour la compatibilité avec les lecteurs de salon |
+| Lecture | MP4 autonome, aucune dépendance réseau |
 
 ## 2. QR code
 
-- **Contenu :** `https://volkeno.com/demander-un-devis`, généré par une vraie bibliothèque d'encodage (qrcode-generator). Il est relu automatiquement.
-- **Format :** version 3 (29 × 29 modules), correction d'erreur M, modules noirs sur fond blanc, marge de 4 modules, 14 px par module (taille entière, donc aucun flou), 518 × 518 px à l'écran.
-- **Lecture sur des images extraites de la vidéo finale :** décodé correctement à **0 s, 35 s, 36 s, 38 s, 40 s, 42 s, 44 s et 44,96 s**, soit **8 sur 8**.
-- **Simulation de distance** (image réduite) : lu à 100 %, 50 %, 35 %, 25 %, 20 % et 15 % de la taille, c'est-à-dire jusqu'à un QR de 78 px de large. **6 sur 6.**
-- **Écran vu de biais** (perspective, largeur apparente réduite à 85 %, 70 % et 55 %) : **3 sur 3.**
-- **Lien lisible sous le QR :** « volkeno.com/demander-un-devis » (28 px).
+- **URL encodée :** `https://volkeno.com/demander-un-devis`. Version 3, correction M, modules noirs sur fond blanc, marge de 4 modules, 518 px, 14 px par module.
+- **Lecture sur des images du MP4 final :** 22 sur 22, à 0 s, puis toutes les 0,5 s de 35,0 à 44,5 s, puis à 44,96 s. **L'URL lue est identique à l'URL officielle.**
+- **Visibilité :** entièrement visible, immobile et net de 35,0 s à la fin de la boucle. Aucun effet ne touche les modules : seuls le halo extérieur et les coins de la carte bougent.
+- **Robustesse :** lu à 100 %, 50 %, 35 %, 25 %, 20 % et 15 % de la taille de l'image, et vu de biais (largeur apparente à 85 %, 70 % et 55 %).
 
-**Pourquoi l'URL sans paramètres de suivi :** le brief demande de n'utiliser l'URL avec paramètres UTM que si elle est compatible avec le formulaire et l'outil de mesure. volkeno.com ne répond pas depuis l'environnement de production, ce qui rend la vérification impossible. J'ai donc gardé l'URL officielle, qui donne aussi un QR plus simple et plus facile à lire de loin. Pour passer à l'URL de suivi, remplacez `qrUrl` dans `src/index.html` (la ligne est prête en commentaire), puis relancez le rendu et la vérification.
+## 3. Lisibilité (taille à l'écran, sur 1080 px de haut)
 
-**Distance de scan (estimation) :** sur un écran de 55 pouces (≈ 68 cm de haut), le QR mesure environ 33 cm. Avec un smartphone courant, la lecture est confortable jusqu'à 2 à 3 m. Au-delà, le visiteur doit s'approcher du stand, ce qui est justement le but.
-
-## 3. Lisibilité et mise en page
-
-Taille des textes à l'écran (sur 1080 px de haut), mesurée sur 14 images de contrôle :
-
-| Séquence | Message principal | Texte secondaire le plus petit |
+| Séquence | Message principal | Plus petit texte affiché |
 |---|---|---|
-| Accroche | 140–150 px | 26 px (noms de produits) |
-| Problèmes | 100–104 px | 30 px (bandeau de marque) |
-| Transformation | 84–124 px | 40 px (phrases d'explication). Les mentions « Exemple d'interface » (20 px) et le contenu des interfaces sont volontairement discrets : ils ne sont pas nécessaires à la compréhension |
-| Volkeno | 80–130 px | 40 px (« Basés à Dakar. ») |
-| Conversion | 102 px | 28 px (lien sous le QR) |
+| Accroche | **300 px** (« LOCAL ? »), 274 px (« PLUS LOIN ? ») | 27 px (noms des produits) |
+| Problèmes | 108–124 px | 30 px (bandeau de marque) |
+| Avant / après | Titre « après » de 104–108 px ; texte « avant » de 44–50 px | 20 px (« Exemple d'interface », volontairement discret) |
+| Signature | **241 px** (« LOCAL. ») | 40 px (« Basés à Dakar. ») |
+| Conversion | 112 px | 28 px (lien sous le QR) |
 
-- **Zone de sécurité** (90 %, marges de 96 px et 54 px) : **aucun texte hors zone** sur les 14 images.
-- **Texte coupé ou débordant :** aucun.
-- **Chevauchement texte / QR code / interfaces :** aucun.
-- **Titres :** chaque titre est réduit automatiquement s'il dépasse sa largeur maximale, ce qui évite qu'il soit coupé si un message est modifié.
-- **Polices :** Montserrat, Inter et Caveat, chargées en local pour le rendu. Aucune police de remplacement n'a été utilisée.
-- **Effets :** aucun clignotement rapide, aucun glitch, aucun zoom agressif. Seul le léger flou de mouvement de l'assemblage du logo (0,7 s) est volontaire.
+**Mise en page :** sur 18 images de contrôle, aucun texte n'est coupé ou superposé. Le seul signalement de zone de sécurité, à 4,8 s, vient d'une carte produit en train de sortir de l'écran pendant son animation de sortie, ce qui est voulu.
 
-## 4. Boucle
+## 4. Fluidité
 
-- **Première image (0 s) et dernière image (44,96 s) :** écart moyen de **0,14 sur 255**, autrement dit identiques à l'œil.
-- **Retour arrière :** les 15 instants de référence donnent exactement les mêmes pixels en avançant, en reculant et après un tour complet de boucle (30 comparaisons). C'est ce qui garantit une animatique fiable quand on navigue ou qu'elle boucle dans le navigateur.
+Écart moyen entre images consécutives, sur les 1125 images, en niveaux de gris sur 255 :
 
-## 5. Règle des cinq secondes (évaluation critique)
+- **Écarts :** médiane 0,23 ; 95ᵉ centile 9,3 ; maximum 20,1.
+- **Écarts les plus forts :** ils correspondent tous à des mouvements voulus et non à des coupures : entrée de la carte QR (34,8 s), sortie des produits (5,2 s), passage de la question à l'« avant » (17,0 s).
+- **Correction faite pendant le contrôle :** les sorties de fenêtre d'interface à 21, 25 et 29 s accéléraient trop sur leur dernière image (écart d'environ 21). Leur courbe d'animation a été adoucie.
+- **Plus longue immobilité :** 1,0 s, contre 4 s avant correction dans la séquence de conversion.
 
-**Test 1 — 5 secondes : réussi.**
-- De 0,8 s à 28,7 s, le bandeau « Volkeno | Solutions numériques pour les entreprises locales » est toujours visible, avec un message qui parle aux entreprises locales (« Vous produisez local ? », un problème concret ou une solution).
-- De 29 à 35 s, le logo et « Des solutions numériques adaptées à votre activité » (dès 30,65 s), puis la signature.
-- De 35 à 45 s, « Parlons-en sur notre stand » et le QR « demander un devis ».
-- Point le plus faible : la fenêtre 29,0–30,6 s, où seul le logo s'assemble. Elle reste à moins de 5 s du message suivant.
+## 5. Transition de boucle
 
-**Test 2 — 20 secondes : réussi.** Toute fenêtre de 20 s contient au moins un problème complet (3 s) ou une transformation complète (4 s) avec son bénéfice écrit.
+- **Dernière image (44,96 s) → première image (0 s) :** écart de **0,24**, du même ordre que deux images ordinaires (médiane 0,23). Il n'y a pas de coupure visible.
+- La première image reproduit exactement l'écran final, puis le Fil turquoise le balaie en 0,6 s.
+- **Retour arrière :** les 15 instants de référence donnent les mêmes pixels en avançant, en reculant et après un tour de boucle (30 comparaisons).
 
-**Test 3 — 45 secondes : réussi.** Le spectateur sait :
-- **ce que fait Volkeno :** des outils numériques sur mesure (centraliser les commandes, piloter stocks et activité, vendre en ligne) ;
-- **pourquoi c'est pour lui :** il a reconnu un de ses problèmes ;
-- **comment rencontrer l'équipe :** « Parlons-en sur notre stand », « Notre équipe est là pour vous écouter », les téléphones ;
-- **comment demander un devis :** le QR et le lien écrit.
+## 6. Règle des cinq secondes
 
-## 6. Limitations
+**5 secondes : réussi.**
+- De 0,9 à 28,7 s, le bandeau Volkeno accompagne un message très grand : « LOCAL ? », un problème, ou un titre « après ».
+- De 29 à 35 s : logo et signature.
+- De 35 à 45 s : « Et si on parlait de votre entreprise ? » et le QR.
 
-1. **Sources externes inaccessibles :** volkeno.com, le formulaire de devis et consommerlocal.sn/fr/programme ne se résolvent pas depuis l'environnement de production. Je n'ai donc pas pu vérifier en ligne que le formulaire existe ni que les paramètres UTM sont compatibles, et le programme officiel n'a pas été consulté. **Aucune information sur l'événement n'a été inventée.** À faire avant le salon : scanner le QR avec un téléphone et vérifier que le formulaire s'ouvre.
-2. **Pas de captures réelles dans le projet :** le dépôt ne contenait ni capture d'écran ni réalisation client. Les interfaces sont des démonstrations conçues pour la vidéo, signalées « Exemple d'interface ». Les noms (A. Diop, M. Fall…) et les montants sont des données d'exemple. Si vous avez des captures réelles autorisées, vous pouvez les intégrer dans les fenêtres d'interface.
-3. **Illustrations :** les produits et les personnages sont des illustrations vectorielles, pas des photos. Des photos réelles d'entreprises locales, dont vous détenez les droits, renforceraient la crédibilité de l'accroche.
-4. **Couleurs :** bleu nuit et turquoise repris de la V1. Les couleurs du logo (corail, turquoise, orange) ont été estimées à partir d'une photo du kakémono, faute de charte officielle dans le projet.
-5. **Téléphones :** +221 76 626 35 68 et 77 112 64 34, tels que fournis. Les fichiers de la V1 contiennent encore l'ancien numéro (33 827 67 91) : ne plus les utiliser.
-6. **Distances de lecture et de scan :** ce sont des estimations pour un écran de 55 pouces. À confirmer sur l'écran réel du stand, de face et de biais.
+**20 secondes : réussi.** Toute fenêtre de 20 s contient au moins un problème complet et sa solution, ou une solution et la conversion.
+
+**45 secondes : réussi.** Le spectateur a vu les trois problèmes, leurs trois solutions, la signature, comment venir sur le stand (équipe, téléphones) et comment demander un devis (QR et lien).
+
+## 7. Limites
+
+- Je n'ai pas pu vérifier en ligne le formulaire volkeno.com/demander-un-devis : le domaine est inaccessible depuis l'environnement de production. **Scannez le QR avec un téléphone avant le salon.**
+- Les interfaces et les données (noms, montants) sont des exemples, signalés comme tels.
+- Les distances de lecture et de scan sont des estimations : à valider sur l'écran réel.

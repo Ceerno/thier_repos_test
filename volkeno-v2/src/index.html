@@ -1,4 +1,4 @@
-<title>Volkeno Stand V2</title>
+<title>Volkeno Stand V2.1</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,18 +107,20 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
 .tag span{font:600 30px/1 var(--f-texte);color:var(--texte-2)}
 
 /* S1 */
-.prod-row{position:absolute;left:0;right:0;top:572px;display:flex;justify-content:center;gap:28px}
-.pcard{width:236px;height:286px;border-radius:28px;background:var(--surface);border:2px solid var(--trait);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:18px 14px}
-.pcard svg{width:150px;height:150px}
-.pcard span{font:700 26px/1.15 var(--f-texte);text-align:center;color:var(--texte)}
-.fleche{position:absolute;left:120px;top:516px;width:0}
-.pointe{position:absolute;top:500px;width:0;height:0;border-left:34px solid var(--accent);border-top:20px solid transparent;border-bottom:20px solid transparent;filter:drop-shadow(0 0 12px color-mix(in srgb,var(--accent) 70%,transparent))}
+.prod-row{position:absolute;left:0;right:0;top:616px;display:flex;justify-content:center;gap:22px}
+.pcard{width:252px;height:308px;border-radius:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px 14px;box-shadow:0 22px 50px rgba(0,0,0,.45)}
+.pcard svg{width:176px;height:176px}
+.pcard span{font:800 27px/1.12 var(--f-titre);text-align:center;color:var(--nuit)}
+.fleche{position:absolute;left:120px;top:588px;width:0}
+.pointe{position:absolute;top:572px;width:0;height:0;border-left:34px solid var(--accent);border-top:20px solid transparent;border-bottom:20px solid transparent;filter:drop-shadow(0 0 12px color-mix(in srgb,var(--accent) 70%,transparent))}
+#s1b .ln,#s1d .ln{overflow:visible}
+#s1b .ln>span,#s1d .ln>span{text-shadow:0 0 60px color-mix(in srgb,var(--accent) 45%,transparent)}
 
 /* S2 */
-.eyebrow{position:absolute;left:96px;top:118px;display:flex;align-items:center;gap:18px;font:700 34px/1 var(--f-titre);letter-spacing:.16em;color:var(--texte-2);white-space:nowrap}
+.eyebrow{position:absolute;left:96px;top:150px;display:flex;align-items:center;gap:18px;font:700 38px/1 var(--f-titre);letter-spacing:.16em;color:var(--texte-2);white-space:nowrap}
 .eyebrow::before{content:"";width:16px;height:16px;border-radius:50%;background:var(--corail);box-shadow:0 0 16px var(--corail)}
-.pblock{position:absolute;left:96px;top:210px;width:920px;display:flex;flex-direction:column;gap:28px}
-.pblock .t{font-size:104px}
+.pblock{position:absolute;left:96px;top:300px;width:1000px;display:flex;flex-direction:column;gap:28px}
+.pblock .t{font-size:124px;letter-spacing:-.025em}
 .msg{position:absolute;width:400px;display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:20px;background:var(--blanc);color:var(--ui-texte);box-shadow:0 18px 40px rgba(0,0,0,.45)}
 .msg .ic{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;flex:none}
 .msg .ic svg{width:28px;height:28px}
@@ -155,8 +157,35 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
 .compteur b{color:var(--orange)}
 
 /* S3 */
-.tblock{position:absolute;left:96px;top:190px;width:840px;display:flex;flex-direction:column;gap:30px}
-.tblock .t{font-size:96px}
+.tblock{position:absolute;left:96px;top:250px;width:860px;display:flex;flex-direction:column;gap:22px}
+.tblock .t{font-size:108px}
+.av-row,.ap-row{display:flex;align-items:center;gap:20px}
+.ap-row{margin-top:18px}
+.chip-av,.chip-ap{flex:none;padding:10px 16px 11px;border-radius:12px;font:900 26px/1 var(--f-titre);letter-spacing:.14em;text-transform:uppercase}
+.chip-av{background:color-mix(in srgb,var(--corail) 22%,transparent);color:#FF8673}
+.chip-ap{background:var(--accent);color:var(--nuit)}
+.av-txt{position:relative;display:inline-block;white-space:nowrap;font:700 50px/1.1 var(--f-titre);color:var(--texte-2)}
+.av-txt::after{content:"";position:absolute;left:-6px;right:-6px;top:54%;height:6px;border-radius:3px;background:var(--corail);transform-origin:0 50%;transform:scaleX(var(--k,0))}
+.wl{position:absolute;top:140px;width:8px;height:720px;margin-left:-4px;border-radius:4px;background:var(--accent);box-shadow:0 0 26px color-mix(in srgb,var(--accent) 80%,transparent),0 0 4px var(--accent);z-index:7}
+#wloop{top:0;height:1080px;z-index:45}
+.auto{display:flex;flex-direction:column;gap:16px;height:100%}
+.cmd-in{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:16px;background:var(--ui-carte);border:2px solid var(--ui-ligne)}
+.cmd-in .ic{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;flex:none}
+.cmd-in .ic svg{width:26px;height:26px}
+.cmd-in b{display:block;font:800 22px/1.15 var(--f-texte)}
+.cmd-in span{display:block;font:600 18px/1.2 var(--f-texte);color:var(--ui-texte-2)}
+.eclair{margin-left:auto;display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:var(--accent);color:var(--nuit);font:800 18px/1 var(--f-texte);white-space:nowrap}
+.eclair svg{width:18px;height:18px}
+.flux{display:flex;flex-direction:column;gap:12px;padding-left:26px;margin-left:24px;border-left:4px solid color-mix(in srgb,var(--accent) 45%,#fff)}
+.tache{position:relative;display:flex;align-items:center;gap:16px;height:72px;padding:0 18px;border-radius:14px;background:var(--ui-carte);border:2px solid var(--ui-ligne);overflow:hidden}
+.tache .prog{position:absolute;left:0;top:0;bottom:0;width:100%;background:color-mix(in srgb,var(--accent) 16%,#fff);transform-origin:0 50%}
+.tache .tic{position:relative;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex:none;background:#EEF2F7}
+.tache .tic svg{width:30px;height:30px}
+.tache b{position:relative;font:800 22px/1 var(--f-texte)}
+.tache .ok-chip{position:relative;margin-left:auto;padding:9px 14px;border-radius:20px;background:color-mix(in srgb,var(--vert) 16%,#fff);color:#11744A;font:800 17px/1 var(--f-texte)}
+.saisie{margin-top:auto;display:flex;align-items:baseline;gap:14px;padding:14px 18px;border-radius:16px;background:var(--nuit);color:#FFFFFF;font:700 22px/1 var(--f-texte)}
+.saisie b{font:900 40px/1 var(--f-titre);color:var(--accent)}
+.carnet.petit{width:520px}
 .ba{display:flex;align-items:center;gap:16px;flex-wrap:nowrap;font:700 28px/1 var(--f-texte);white-space:nowrap}
 .ba .av{color:var(--texte-3);text-decoration:line-through;text-decoration-color:var(--corail);text-decoration-thickness:3px}
 .ba .fl{color:var(--texte-3)}
@@ -203,7 +232,7 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
 .stk-r{display:flex;flex-direction:column;gap:18px}
 .chart{flex:1;border-radius:16px;background:var(--ui-carte);border:2px solid var(--ui-ligne);padding:20px 22px;display:flex;flex-direction:column;gap:10px}
 .chart svg{flex:1;width:100%}
-.toast{position:absolute;left:520px;top:440px;width:440px;border-radius:18px;background:var(--ui-carte);color:var(--ui-texte);border-left:10px solid var(--corail);padding:18px 20px;box-shadow:0 24px 50px rgba(11,17,32,.35);z-index:4}
+.toast{position:absolute;left:376px;top:440px;width:440px;border-radius:18px;background:var(--ui-carte);color:var(--ui-texte);border-left:10px solid var(--corail);padding:18px 20px;box-shadow:0 24px 50px rgba(11,17,32,.35);z-index:4}
 .toast b{display:block;font:800 22px/1.2 var(--f-texte)}
 .toast span{display:block;margin-top:4px;font:600 18px/1.2 var(--f-texte);color:var(--ui-texte-2)}
 .toast .btn{display:inline-block;margin-top:14px;padding:12px 18px;border-radius:12px;background:var(--accent);color:var(--nuit);font:800 19px/1 var(--f-texte)}
@@ -240,27 +269,29 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
 /* S4 */
 .logoV{position:absolute;left:838px;top:300px;width:245px;height:380px}
 .logoV img{position:absolute;inset:0;width:100%;height:100%}
-.msg4{position:absolute;left:760px;top:0;width:1064px;height:1080px;display:flex;align-items:center}
-.msg4 .t{font-size:84px}
-.sig{position:absolute;left:0;right:0;top:360px;display:flex;flex-direction:column;align-items:center;gap:34px}
+.sig{position:absolute;left:0;right:0;top:262px;display:flex;flex-direction:column;align-items:center;gap:22px}
 .sig-eb{display:flex;align-items:center;gap:20px;font:800 40px/1 var(--f-titre);letter-spacing:.18em;text-transform:uppercase;color:var(--texte-2);white-space:nowrap}
 .drapeau{display:flex;width:84px;height:12px;border-radius:6px;overflow:hidden}
 .drapeau i{flex:1}
-.sig .t{font-size:130px}
+.sig .t{font-size:112px}
+.sig .t .ln:last-child{font-size:2.15em;line-height:1;overflow:visible}
+.savoir{position:absolute;left:0;right:0;top:860px;height:104px;display:flex;justify-content:center;align-items:center;gap:44px}
+.rond{position:relative;width:104px;height:104px;border-radius:50%;background:var(--papier);display:grid;place-items:center;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 60%,transparent),0 10px 24px rgba(0,0,0,.4);z-index:1}
+.rond svg{width:76px;height:76px}
+.fil-h{position:absolute;left:590px;width:740px;top:50%;height:6px;margin-top:-3px;border-radius:3px;background:var(--accent);box-shadow:0 0 16px color-mix(in srgb,var(--accent) 70%,transparent)}
 
 /* S5 */
-.q5{position:absolute;left:120px;top:122px;width:1060px;margin:0;font:900 66px/1.05 var(--f-titre);text-transform:uppercase;color:var(--accent);white-space:nowrap;transform-origin:0 50%}
-.p5{position:absolute;left:120px;top:222px;width:1060px}
-.p5 .t{font-size:128px}
-.e5{position:absolute;left:120px;top:548px;display:flex;align-items:center;gap:26px}
+.p5{position:absolute;left:120px;top:104px;width:1060px}
+.p5 .t{font-size:112px}
+.e5{position:absolute;left:120px;top:612px;display:flex;align-items:center;gap:26px}
 .e5 svg{width:84px;height:84px;flex:none}
 .e5 p{margin:0;font:800 50px/1.12 var(--f-titre);text-transform:uppercase;color:var(--texte)}
-.c5{position:absolute;left:120px;top:712px;display:flex;align-items:center;gap:22px;font:800 46px/1 var(--f-titre);white-space:nowrap}
-.c5 svg{width:54px;height:54px;flex:none}
-.c5 small{font-size:34px;color:var(--texte-2);margin-right:6px}
-.l5{position:absolute;left:120px;top:810px;display:flex;align-items:center;gap:22px}
-.l5 img{height:120px;display:block}
-.l5 b{font:800 54px/1 var(--f-titre);letter-spacing:-.02em}
+.c5{position:absolute;left:120px;top:770px;display:flex;align-items:center;gap:18px;font:800 40px/1 var(--f-titre);white-space:nowrap;color:var(--texte-2)}
+.c5 svg{width:44px;height:44px;flex:none}
+.c5 small{font-size:30px;margin-right:6px}
+.l5{position:absolute;left:120px;top:850px;display:flex;align-items:center;gap:20px}
+.l5 img{height:96px;display:block}
+.l5 b{font:800 46px/1 var(--f-titre);letter-spacing:-.02em}
 .qr5{position:absolute;left:1236px;top:96px;width:588px;border-radius:32px;background:var(--blanc);padding:34px 34px 30px;display:flex;flex-direction:column;align-items:center;gap:18px;box-shadow:0 0 0 6px color-mix(in srgb,var(--accent) 55%,transparent),0 0 60px color-mix(in srgb,var(--accent) 35%,transparent)}
 .qrbox{position:relative;line-height:0}
 .qrbox svg{display:block}
@@ -294,7 +325,7 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
             <symbol id="p-boubou" viewBox="0 0 160 160"><path d="M80 22c-10 0-16 6-18 12L25 48 10 108l26 6 7-32v72h74V82l7 32 26-6-15-60-37-14c-2-6-8-12-18-12Z" fill="url(#wax)" stroke="#0B1120" stroke-width="3"/><path d="M68 34c4 9 20 9 24 0" fill="none" stroke="#0B1120" stroke-width="3"/></symbol>
             <symbol id="p-savon" viewBox="0 0 160 160"><rect x="26" y="70" width="108" height="56" rx="18" fill="#E7D3A8"/><rect x="26" y="58" width="108" height="56" rx="18" fill="#F7EBCF"/><path d="M80 70c18 0 26 10 26 26-18 0-26-10-26-26Z" fill="#4CAF7A"/><path d="M80 96c4-8 10-14 20-20" fill="none" stroke="#2E7D53" stroke-width="3"/><circle cx="46" cy="40" r="8" fill="none" style="stroke:var(--accent)" stroke-width="3"/><circle cx="62" cy="28" r="5" fill="none" style="stroke:var(--accent)" stroke-width="3"/></symbol>
             <symbol id="p-poisson" viewBox="0 0 160 160"><path d="M24 80c22-32 72-36 96-10l20-18v56l-20-18c-24 26-74 22-96-10Z" fill="#8FB3C9"/><path d="M60 58c10 6 10 38 0 44" fill="none" stroke="#6E93AA" stroke-width="4"/><circle cx="46" cy="74" r="6" fill="#0B1120"/><path d="M78 56l14-14 6 18" fill="#6E93AA"/></symbol>
-            <symbol id="p-moto" viewBox="0 0 160 160"><rect x="34" y="44" width="44" height="40" rx="7" style="fill:var(--orange)"/><path d="M44 104h54l16-34h16" fill="none" style="stroke:var(--accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M60 92h30" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/><circle cx="46" cy="116" r="16" fill="none" stroke="#FFFFFF" stroke-width="8"/><circle cx="120" cy="116" r="16" fill="none" stroke="#FFFFFF" stroke-width="8"/></symbol>
+            <symbol id="p-moto" viewBox="0 0 160 160"><rect x="34" y="44" width="44" height="40" rx="7" style="fill:var(--orange)"/><path d="M44 104h54l16-34h16" fill="none" style="stroke:var(--accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M60 92h30" stroke="#0B1120" stroke-width="10" stroke-linecap="round"/><circle cx="46" cy="116" r="16" fill="none" stroke="#0B1120" stroke-width="8"/><circle cx="120" cy="116" r="16" fill="none" stroke="#0B1120" stroke-width="8"/></symbol>
             <symbol id="p-huile" viewBox="0 0 160 160"><rect x="70" y="12" width="20" height="14" rx="3" fill="#2E7D53"/><path d="M70 24h20v16l14 16v82c0 6-4 10-10 10H66c-6 0-10-4-10-10V56l14-16Z" fill="#F2C94C"/><rect x="62" y="84" width="36" height="34" rx="5" fill="#FFFFFF"/><circle cx="80" cy="101" r="8" fill="#C98A1B"/></symbol>
             <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4Z" fill="#FFFFFF"/></symbol>
             <symbol id="i-tel" viewBox="0 0 24 24"><path d="M7 3c1.4 0 2.6 3 3 4.4.3 1.2-1 2.4-1.8 3 .9 2.6 3 4.8 5.6 5.7.6-.9 1.8-2.2 3-1.8 1.4.4 4.4 1.6 4.4 3 0 2.6-2.2 4.8-4.9 4.6C9.6 21.3 2.7 14.4 2.4 7.6 2.2 5 4.4 3 7 3Z" fill="#FFFFFF"/></symbol>
@@ -310,26 +341,28 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
 
         <!-- ===== S1 · Accroche (0 → 6 s) ===== -->
         <div class="scene" id="s1">
-          <h1 class="t center abs fit" id="s1t" data-t="s1_titre" data-max="1700" style="left:0;right:0;top:150px;font-size:150px"></h1>
-          <h1 class="t center abs fit" id="s1r" data-t="s1_relance" data-max="1700" style="left:0;right:0;top:170px;font-size:140px"></h1>
+          <h1 class="t center abs fit" id="s1a" data-t="s1_l1" data-max="1728" style="left:0;right:0;top:92px;font-size:168px"></h1>
+          <h1 class="t center abs fit" id="s1b" data-t="s1_l2" data-max="1728" style="left:0;right:0;top:262px;font-size:300px"></h1>
+          <h1 class="t center abs fit" id="s1c" data-t="s1_l3" data-max="1728" style="left:0;right:0;top:92px;font-size:168px"></h1>
+          <h1 class="t center abs fit" id="s1d" data-t="s1_l4" data-max="1728" style="left:0;right:0;top:262px;font-size:300px"></h1>
           <div class="fil fleche" id="fleche"></div>
           <div class="pointe" id="pointe"></div>
           <div class="prod-row" id="prodRow">
-            <div class="pcard"><svg><use href="#p-bissap"/></svg><span>Jus de bissap</span></div>
-            <div class="pcard"><svg><use href="#p-fonio"/></svg><span>Fonio &amp; céréales</span></div>
-            <div class="pcard"><svg><use href="#p-boubou"/></svg><span>Couture &amp; mode</span></div>
-            <div class="pcard"><svg><use href="#p-savon"/></svg><span>Savon au karité</span></div>
-            <div class="pcard"><svg><use href="#p-poisson"/></svg><span>Produits de la mer</span></div>
-            <div class="pcard"><svg><use href="#p-moto"/></svg><span>Livraison &amp; transport</span></div>
+            <div class="pcard" style="background:#FBE3E8"><svg><use href="#p-bissap"/></svg><span>Jus de bissap</span></div>
+            <div class="pcard" style="background:#F7EBD5"><svg><use href="#p-fonio"/></svg><span>Fonio &amp; céréales</span></div>
+            <div class="pcard" style="background:#E4E9FA"><svg><use href="#p-boubou"/></svg><span>Couture &amp; mode</span></div>
+            <div class="pcard" style="background:#EEF6E4"><svg><use href="#p-savon"/></svg><span>Savon au karité</span></div>
+            <div class="pcard" style="background:#E2EFF7"><svg><use href="#p-poisson"/></svg><span>Produits de la mer</span></div>
+            <div class="pcard" style="background:#FFEBD6"><svg><use href="#p-moto"/></svg><span>Livraison &amp; transport</span></div>
           </div>
         </div>
 
         <!-- ===== S2 · Les problèmes (6 → 15 s) ===== -->
         <div class="scene" id="s2">
           <div class="eyebrow" id="eyebrow" data-t="s2_eyebrow"></div>
-          <div class="pblock" id="pb1"><h2 class="t fit" data-t="p1_titre" data-max="920"></h2><p class="sous" data-t="p1_sous"></p></div>
-          <div class="pblock" id="pb2"><h2 class="t fit" data-t="p2_titre" data-max="920"></h2><p class="sous" data-t="p2_sous"></p></div>
-          <div class="pblock" id="pb3"><h2 class="t fit" data-t="p3_titre" data-max="920"></h2><p class="sous" data-t="p3_sous"></p></div>
+          <div class="pblock" id="pb1"><h2 class="t fit" data-t="p1_titre" data-max="990"></h2></div>
+          <div class="pblock" id="pb2"><h2 class="t fit" data-t="p2_titre" data-max="990"></h2></div>
+          <div class="pblock" id="pb3"><h2 class="t fit" data-t="p3_titre" data-max="990"></h2></div>
 
           <div class="scene" id="il1">
             <div class="phone" id="ph1" style="left:1290px;top:250px;width:310px;height:600px">
@@ -394,10 +427,29 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
         <!-- ===== S3 · La transformation (15 → 29 s) ===== -->
         <div class="scene" id="s3">
           <h2 class="t center abs fit" id="s3t" data-t="s3_titre" data-max="1640" style="left:0;right:0;top:250px;font-size:124px"></h2>
-          <div id="mcs"></div>
-          <div class="tblock" id="tbA"><div class="ba"><span class="av" data-t="a_avant"></span><span class="fl">→</span><span class="ap" data-t="a_apres"></span></div><h2 class="t fit" data-t="a_titre" data-max="840"></h2><p class="sous" data-t="a_sous"></p></div>
-          <div class="tblock" id="tbB"><div class="ba"><span class="av" data-t="b_avant"></span><span class="fl">→</span><span class="ap" data-t="b_apres"></span></div><h2 class="t fit" data-t="b_titre" data-max="840"></h2><p class="sous" data-t="b_sous"></p></div>
-          <div class="tblock" id="tbC"><div class="ba"><span class="av" data-t="c_avant"></span><span class="fl">→</span><span class="ap" data-t="c_apres"></span></div><h2 class="t fit" data-t="c_titre" data-max="840"></h2><p class="sous" data-t="c_sous"></p></div>
+          <div class="scene" id="mcs"></div>
+          <div class="tblock" id="tbA"><div class="av-row"><span class="chip-av">Avant</span><span class="av-txt fitw" data-t="a_avant" data-max="660"></span></div><div class="ap-row"><span class="chip-ap">Après</span></div><h2 class="t fit" data-t="a_titre" data-max="860"></h2></div>
+          <div class="tblock" id="tbB"><div class="av-row"><span class="chip-av">Avant</span><span class="av-txt fitw" data-t="b_avant" data-max="660"></span></div><div class="ap-row"><span class="chip-ap">Après</span></div><h2 class="t fit" data-t="b_titre" data-max="860"></h2></div>
+          <div class="tblock" id="tbC"><div class="av-row"><span class="chip-av">Avant</span><span class="av-txt fitw" data-t="c_avant" data-max="660"></span></div><div class="ap-row"><span class="chip-ap">Après</span></div><h2 class="t fit" data-t="c_titre" data-max="860"></h2></div>
+
+          <!-- visuels « avant » (B et C) ; pour A, ce sont les cartes de messages -->
+          <div class="scene" id="avB">
+            <div class="carnet petit" style="left:1080px;top:200px;transform:rotate(-3deg)">
+              <h4>Stock</h4>
+              <div class="cl"><span>Fonio 500 g</span><span><s style="--k:1">120</s> <s style="--k:1">98</s> <span class="q">??</span></span></div>
+              <div class="cl"><span>Bissap 1 L</span><span><s style="--k:1">48</s> 36</span></div>
+              <div class="cl"><span>Savon karité</span><span class="q">15&#8239;?</span></div>
+              <div class="cl"><span>Huile 1 L</span><span><s style="--k:1">60</s> <span class="q">?</span></span></div>
+            </div>
+            <div class="qbul" style="left:1660px;top:250px">?</div>
+            <div class="alerte" style="left:1330px;top:700px"><svg viewBox="0 0 24 24"><path d="M12 3l10 18H2Z" fill="#FFFFFF"/><path d="M12 10v5M12 17.5v.5" stroke="#E0533F" stroke-width="2.4" stroke-linecap="round"/></svg>Rupture de stock&#8239;!</div>
+          </div>
+          <div class="scene" id="avC">
+            <div class="doc" style="left:1080px;top:200px;transform:rotate(-6deg)"><h5>Bon de commande</h5><i style="width:80%"></i><span class="hl">A. Diop · 5 L · 7&#8239;500 F</span><i></i><i style="width:60%"></i></div>
+            <div class="doc" style="left:1250px;top:240px;transform:rotate(-1deg)"><h5>Facture</h5><i style="width:70%"></i><span class="hl">A. Diop · 5 L · 7&#8239;500 F</span><i></i><i style="width:50%"></i></div>
+            <div class="doc" style="left:1420px;top:280px;transform:rotate(4deg)"><h5>Tableau</h5><i style="width:90%"></i><span class="hl">A. Diop · 5 L · 7&#8239;500 F</span><i></i><i style="width:65%"></i></div>
+            <div class="compteur" style="left:1240px;top:720px">Saisie n°&#8239;<b>37</b></div>
+          </div>
 
           <div class="win" id="win">
             <div class="win-bar"><i></i><i></i><i></i><b id="winTitre">Commandes</b><span id="winDroite">Aujourd'hui</span></div>
@@ -434,36 +486,23 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
               </div>
               <div class="toast" id="toastB"><b>Stock bas : savon karité</b><span>12 unités restantes</span><span class="btn" id="btnB">Réapprovisionner</span><div class="ok" id="okB"><i>✓</i>Commande fournisseur envoyée</div></div>
             </div>
-            <!-- C : catalogue web -->
+            <!-- C : opérations automatisées -->
             <div class="pane" id="paneC">
-              <div class="search">Rechercher un produit…</div>
-              <div class="cat">
-                <div class="ctile"><svg viewBox="0 0 160 160"><use href="#p-bissap"/></svg><b>Jus de bissap 1 L</b><span>1&#8239;500 F</span></div>
-                <div class="ctile"><svg viewBox="0 0 160 160"><use href="#p-fonio"/></svg><b>Fonio 500 g</b><span>2&#8239;500 F</span></div>
-                <div class="ctile"><svg viewBox="0 0 160 160"><use href="#p-savon"/></svg><b>Savon au karité</b><span>750 F</span></div>
-                <div class="ctile"><svg viewBox="0 0 160 160"><use href="#p-boubou"/></svg><b>Boubou wax</b><span>25&#8239;000 F</span></div>
-                <div class="ctile"><svg viewBox="0 0 160 160"><use href="#p-huile"/></svg><b>Huile 1 L</b><span>1&#8239;800 F</span></div>
-                <div class="ctile"><svg viewBox="0 0 160 160"><use href="#p-poisson"/></svg><b>Poisson séché</b><span>3&#8239;000 F</span></div>
+              <div class="auto">
+                <div class="cmd-in" id="cmdIn"><div class="ic" style="background:#25A56A"><svg><use href="#i-chat"/></svg></div><div><b>Nouvelle commande</b><span>A. Diop · Bissap 1 L × 5 · 7&#8239;500 F</span></div><span class="eclair"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7Z" fill="#0B1120"/></svg>Automatique</span></div>
+                <div class="flux">
+                  <div class="tache"><i class="prog"></i><span class="tic" style="background:#B07A3B"><svg viewBox="0 0 24 24"><use href="#i-carnet"/></svg></span><b>Facture générée</b><span class="ok-chip">✓ Fait</span></div>
+                  <div class="tache"><i class="prog"></i><span class="tic"><svg viewBox="0 0 160 160"><use href="#p-fonio"/></svg></span><b>Stock mis à jour</b><span class="ok-chip">✓ Fait</span></div>
+                  <div class="tache"><i class="prog"></i><span class="tic"><svg viewBox="0 0 160 160"><use href="#p-moto"/></svg></span><b>Livraison planifiée</b><span class="ok-chip">✓ Fait</span></div>
+                  <div class="tache"><i class="prog"></i><span class="tic" style="background:#8B5CF6"><svg viewBox="0 0 24 24"><use href="#i-dm"/></svg></span><b>Client prévenu par SMS</b><span class="ok-chip">✓ Fait</span></div>
+                </div>
+                <div class="saisie" id="saisieC">Saisies manuelles : <b>0</b></div>
               </div>
             </div>
           </div>
           <div class="exemple" id="exA" style="left:980px;top:858px;width:844px;text-align:right">Exemple d'interface</div>
 
-          <div class="phone light" id="phC" style="left:1450px;top:150px;width:370px;height:740px">
-            <div class="ph-notch"></div>
-            <div class="ph-scr">
-              <div class="ph-h">Catalogue<div class="panier"><svg><use href="#i-panier"/></svg><b id="panB">0</b></div></div>
-              <div class="ph-cat">
-                <div class="ph-tile"><svg viewBox="0 0 160 160"><use href="#p-bissap"/></svg><b>Bissap 1 L</b><span>1&#8239;500 F</span><div class="plus" id="plus1">+</div></div>
-                <div class="ph-tile"><svg viewBox="0 0 160 160"><use href="#p-fonio"/></svg><b>Fonio 500 g</b><span>2&#8239;500 F</span><div class="plus" id="plus2">+</div></div>
-                <div class="ph-tile"><svg viewBox="0 0 160 160"><use href="#p-savon"/></svg><b>Savon karité</b><span>750 F</span><div class="plus">+</div></div>
-                <div class="ph-tile"><svg viewBox="0 0 160 160"><use href="#p-huile"/></svg><b>Huile 1 L</b><span>1&#8239;800 F</span><div class="plus">+</div></div>
-              </div>
-              <div class="cmd" id="cmdC">Commander</div>
-            </div>
-            <div class="conf" id="confC"><div class="ck">✓</div><b>Commande confirmée</b><span>Livraison prévue demain</span><div class="rec">Bissap 1 L × 1<br>Fonio 500 g × 1<br><b style="font-size:20px">Total : 4&#8239;000 F</b></div></div>
-          </div>
-          <div class="notif" id="notifC" style="left:1200px;top:200px"><i>✓</i>Nouvelle commande reçue</div>
+          <div class="wl" id="wl3"></div>
           <svg class="curseur" id="curseur" viewBox="0 0 56 56"><path d="M14 6l30 22-13 2 8 16-7 3-8-16-10 9Z" fill="#FFFFFF" stroke="#0B1120" stroke-width="3" stroke-linejoin="round"/></svg>
           <div class="onde" id="onde"></div>
         </div>
@@ -471,22 +510,28 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
         <!-- ===== S4 · Volkeno (29 → 35 s) ===== -->
         <div class="scene" id="s4">
           <div class="logoV" id="logoV"><img id="lgG" alt=""><img id="lgL" alt=""><img id="lgB" alt=""><img id="lgM" alt=""></div>
-          <div class="msg4" id="msg4"><h2 class="t fit" data-t="s4_message" data-max="1064"></h2></div>
           <div class="sig" id="sig">
             <div class="sig-eb" id="sigEb"><span class="drapeau"><i style="background:#00853F"></i><i style="background:#FDEF42"></i><i style="background:#E31B23"></i></span><span data-t="s4_eyebrow"></span></div>
-            <h2 class="t center fit" id="sigT" data-t="s4_signature" data-max="1650"></h2>
+            <h2 class="t center fit" id="sigT" data-t="s4_signature" data-max="1640"></h2>
           </div>
           <div class="fil" id="fil4" style="width:0"></div>
+          <div class="savoir" id="savoir">
+            <i class="fil-h" id="filS"></i>
+            <span class="rond"><svg viewBox="0 0 160 160"><use href="#p-bissap"/></svg></span>
+            <span class="rond"><svg viewBox="0 0 160 160"><use href="#p-fonio"/></svg></span>
+            <span class="rond"><svg viewBox="0 0 160 160"><use href="#p-boubou"/></svg></span>
+            <span class="rond"><svg viewBox="0 0 160 160"><use href="#p-savon"/></svg></span>
+            <span class="rond"><svg viewBox="0 0 160 160"><use href="#p-poisson"/></svg></span>
+            <span class="rond"><svg viewBox="0 0 160 160"><use href="#p-moto"/></svg></span>
+          </div>
         </div>
 
         <!-- ===== S5 · Conversion (35 → 45 s) ===== -->
         <div class="scene" id="s5">
-          <div class="p5" id="q5big"><h2 class="t fit" data-t="s5_question_grand" data-max="1060"></h2></div>
-          <p class="q5" id="q5" data-t="s5_question"></p>
           <div class="p5" id="p5"><h2 class="t fit" data-t="s5_titre" data-max="1060"></h2></div>
           <div class="fil" id="fil5" style="width:0"></div>
           <div class="e5" id="e5"><svg viewBox="0 0 84 84"><path d="M8 14h46a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6H26L12 62V50H8a6 6 0 0 1-6-6V20a6 6 0 0 1 6-6Z" style="fill:var(--accent)"/><path d="M66 30h10a6 6 0 0 1 6 6v22a6 6 0 0 1-6 6h-2v10l-12-10H46a6 6 0 0 1-6-6v-2h14a12 12 0 0 0 12-12Z" fill="#FFFFFF" opacity=".85"/></svg><p data-t="s5_equipe"></p></div>
-          <div class="c5" id="c5"><svg viewBox="0 0 24 24"><use href="#i-tel" style="fill:var(--accent)"/></svg><span data-t="s5_tel"></span></div>
+          <div class="c5" id="c5"><svg viewBox="0 0 24 24"><use href="#i-tel"/></svg><span data-t="s5_tel"></span></div>
           <div class="l5" id="l5"><img id="lgS5" alt=""><b data-t="s5_site"></b></div>
           <div class="qr5" id="qr5">
             <div class="qrbox" id="qrbox"><span class="coin a"></span><span class="coin b"></span><span class="coin c"></span><span class="coin d"></span></div>
@@ -496,7 +541,7 @@ em.acc,.acc{font-style:normal;color:var(--accent)}
         </div>
 
         <div class="tag" id="tag"><img id="lgTag" alt=""><b>Volkeno</b><i></i><span data-t="tag"></span></div>
-        <div class="wipe" id="wipe"></div>
+        <div class="wl" id="wloop"></div>
         <div class="safe" id="safe" hidden><span>Zone de sécurité 90&#8239;%</span></div>
       </div>
     </div>
@@ -541,29 +586,20 @@ const CONFIG = {
   qrTaille: 518,              // taille visée du QR (pixels), marge blanche comprise
   textes: {
     tag: 'Solutions numériques pour les entreprises locales',
-    s1_titre: 'Vous produisez|*local* ?',
-    s1_relance: 'Et si vous alliez|*plus loin* ?',
+    s1_l1: 'Vous produisez', s1_l2: '*Local* ?',
+    s1_l3: 'Et si vous alliez', s1_l4: '*Plus loin* ?',
     s2_eyebrow: 'Vous vous reconnaissez ?',
     p1_titre: 'Commandes|dispersées ?',
-    p1_sous: 'Messages, appels, cahiers… et des oublis.',
     p2_titre: 'Stocks|difficiles|à suivre ?',
-    p2_sous: 'Ruptures et pertes imprévues.',
     p3_titre: 'Trop de tâches|répétitives ?',
-    p3_sous: 'Des heures à tout recopier.',
     s3_titre: 'Et si vos outils|travaillaient|*pour vous* ?',
-    a_avant: 'Commandes dispersées', a_apres: 'Commandes centralisées',
-    a_titre: 'Centralisez|*vos commandes.*', a_sous: 'Toutes vos commandes au même endroit, avec leur statut.',
-    b_avant: 'Gestion manuelle', b_apres: 'Suivi numérique',
-    b_titre: 'Pilotez|*votre activité.*', b_sous: 'Stocks, ventes et alertes en temps réel.',
-    c_avant: 'Ventes limitées', c_apres: 'Catalogue et commande en ligne',
-    c_titre: 'Facilitez|*vos ventes.*', c_sous: 'Vos clients commandent en ligne, 24 h/24.',
-    s4_message: 'Des solutions|numériques adaptées|à *votre activité.*',
+    a_avant: 'Commandes dispersées', a_titre: 'Commandes|*centralisées*',
+    b_avant: 'Stocks suivis manuellement', b_titre: 'Tableau|*de bord*',
+    c_avant: 'Processus répétitifs', c_titre: 'Opérations|*automatisées*',
     s4_eyebrow: 'Basés à Dakar.',
-    s4_signature: 'Le digital aussi|se consomme *local.*',
-    s5_question_grand: 'Vous avez|un *projet* ?',
-    s5_question: 'Vous avez un projet ?',
-    s5_titre: 'Parlons-en|sur notre *stand.*',
-    s5_equipe: 'Notre équipe est là|pour vous écouter.',
+    s4_signature: 'Le digital aussi|se consomme|*local.*',
+    s5_titre: 'Et si|on parlait|de votre|*entreprise* ?',
+    s5_equipe: 'Notre équipe vous attend|sur le stand.',
     s5_tel: '<small>+221</small>76 626 35 68 · 77 112 64 34',
     s5_site: 'volkeno.com',
     s5_qr_titre: 'Scannez pour|demander un devis',
@@ -651,6 +687,14 @@ const LOGO = {
     });
   }
 
+  function fitLines(){   // textes d'une seule ligne (« avant »)
+    $$('.fitw').forEach(el => {
+      const max = parseFloat(el.dataset.max);
+      let fs = parseFloat(getComputedStyle(el).fontSize), guard = 0;
+      while (el.getBoundingClientRect().width / scale > max && fs > 24 && guard++ < 200) { fs -= 1; el.style.fontSize = fs + 'px'; }
+    });
+  }
+
   function box(el){
     const r = el.getBoundingClientRect(), s = stage.getBoundingClientRect();
     return { x: (r.left - s.left) / scale, y: (r.top - s.top) / scale, w: r.width / scale, h: r.height / scale };
@@ -659,11 +703,11 @@ const LOGO = {
   let tl;
   function build(){
     fitTitles();
+    fitLines();
     /* mesures (avant toute transformation) */
     const stand = box($('#p5 em.acc'));
-    const local = box($('#sigT em.acc'));
-    const rowsA = $$('#tblA .tr:not(.th)').map(box);
-    const plus1 = box($('#plus1')), plus2 = box($('#plus2')), cmdC = box($('#cmdC')), btnB = box($('#btnB'));
+    const local = box($('#sigT .ln:last-child>span'));
+    const btnB = box($('#btnB'));
 
     tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out', duration: .45 } });
     const S = (t, v) => tl.set(t, v, 0);
@@ -685,34 +729,40 @@ const LOGO = {
     S('#halo', { autoAlpha: 0, scale: 1 });
     S('.ln>span', { yPercent: 0 });
 
-    /* ---------- Boucle : à 0 s on voit l'écran final (identique à 45 s), puis un volet turquoise ouvre la séquence 1 ---------- */
-    S('#wipe', { '--a': 0, '--b': 0 });
-    tl.to('#wipe', { '--a': 115, duration: .28, ease: 'power2.in' }, 0);
-    tl.to('#wipe', { '--b': 115, duration: .34, ease: 'power2.out' }, .3);
-    S(['#s1', '#s2', '#s3', '#s4'], { autoAlpha: 0 });
-    S('#s5', { autoAlpha: 1 });
-    tl.set('#s5', { autoAlpha: 0 }, .28);
-    tl.set('#s1', { autoAlpha: 1 }, .28);
+    /* ---------- Boucle : à 0 s l'écran final (identique à 45 s) est balayé par le Fil ; l'accroche démarre derrière ---------- */
+    S(['#s2', '#s3', '#s4'], { autoAlpha: 0 });
+    S('#s1', { autoAlpha: 1 });
+    S('#s5', { autoAlpha: 1, clipPath: 'inset(0px 0px 0px 0px)' });
+    S('#wloop', { left: -14, autoAlpha: 1 });
+    tl.to('#wloop', { left: 1934, duration: .6, ease: 'power2.inOut' }, 0);
+    tl.to('#s5', { clipPath: 'inset(0px 0px 0px 1920px)', duration: .6, ease: 'power2.inOut' }, 0);
+    tl.set('#s5', { autoAlpha: 0, clipPath: 'inset(0px 0px 0px 0px)' }, .62);
     S('#tag', { autoAlpha: 0, y: 20 });
-    tl.to('#tag', { autoAlpha: 1, y: 0, duration: .5 }, .8);
+    tl.to('#tag', { autoAlpha: 1, y: 0, duration: .5 }, .9);
 
-    /* ===== S1 · Accroche ===== */
-    const s1t = $('#s1t'), s1r = $('#s1r');
-    tl.set($$('.ln>span', s1t), { yPercent: 115 }, .28);
-    linesIn(s1t, .45, .14);
-    S($$('.ln>span', s1r), { yPercent: 115 });
+    /* ===== S1 · Accroche : titres géants, entrée rapide, produits mis en avant ===== */
+    const L = s => $$('.ln>span', $(s));
+    S(L('#s1a'), { yPercent: 115 });
+    S(L('#s1c'), { yPercent: 115 });
+    S([...L('#s1b'), ...L('#s1d')], { autoAlpha: 0, scale: .45, transformOrigin: '50% 60%' });
+    tl.to(L('#s1a'), { yPercent: 0, duration: .45, ease: 'power4.out' }, .55);
+    tl.to(L('#s1b'), { autoAlpha: 1, scale: 1, duration: .6, ease: 'back.out(1.7)' }, .8);
     const cards = $$('.pcard');
-    tl.set(cards, { autoAlpha: 0, y: 90, rotation: i => [-6, 4, -3, 5, -4, 3][i] }, .28);
-    tl.to(cards, { autoAlpha: 1, y: 0, rotation: 0, duration: .55, stagger: .16, ease: 'back.out(1.6)' }, .75);
-    linesOut(s1t, 3.0);
-    linesIn(s1r, 3.3, .12);
+    S(cards, { autoAlpha: 0, y: 150, scale: .85, rotation: i => [-7, 5, -4, 6, -5, 4][i] });
+    tl.to(cards, { autoAlpha: 1, y: 0, scale: 1, rotation: 0, duration: .55, stagger: .1, ease: 'back.out(1.5)' }, 1.1);
+    tl.to(cards, { y: i => (i % 2 ? -10 : 10), duration: .8, yoyo: true, repeat: 1, ease: 'sine.inOut' }, 2.15);
+    tl.to(L('#s1a'), { yPercent: -115, duration: .3, ease: 'power2.in' }, 3.0);
+    tl.to(L('#s1b'), { autoAlpha: 0, scale: .85, duration: .25, ease: 'power2.in' }, 3.05);
+    tl.to(L('#s1c'), { yPercent: 0, duration: .45, ease: 'power4.out' }, 3.25);
+    tl.to(L('#s1d'), { autoAlpha: 1, scale: 1, duration: .55, ease: 'back.out(1.7)' }, 3.45);
     S('#fleche', { width: 0, autoAlpha: 1 });
     S('#pointe', { autoAlpha: 0, left: 110 });
-    tl.to('#fleche', { width: 1660, duration: .7, ease: 'power2.inOut' }, 3.6);
-    tl.set('#pointe', { autoAlpha: 1 }, 3.6);
-    tl.to('#pointe', { left: 1770, duration: .7, ease: 'power2.inOut' }, 3.6);
-    tl.to(cards, { x: 1500, autoAlpha: 0, duration: .75, stagger: { each: .09, from: 'end' }, ease: 'power2.in' }, 4.5);
-    linesOut(s1r, T.s2 - .35);
+    tl.to('#fleche', { width: 1660, duration: .6, ease: 'power2.inOut' }, 3.75);
+    tl.set('#pointe', { autoAlpha: 1 }, 3.75);
+    tl.to('#pointe', { left: 1770, duration: .6, ease: 'power2.inOut' }, 3.75);
+    tl.to(cards, { x: 1500, autoAlpha: 0, duration: .7, stagger: { each: .08, from: 'end' }, ease: 'power2.in' }, 4.5);
+    tl.to(L('#s1c'), { yPercent: -115, duration: .3, ease: 'power2.in' }, T.s2 - .35);
+    tl.to(L('#s1d'), { autoAlpha: 0, duration: .3 }, T.s2 - .35);
     tl.to(['#fleche', '#pointe'], { autoAlpha: 0, duration: .3 }, T.s2 - .35);
     tl.set('#s1', { autoAlpha: 0 }, T.s2);
 
@@ -724,14 +774,12 @@ const LOGO = {
     ['#pb1', '#pb2', '#pb3'].forEach((id, i) => {
       const t0 = T.s2 + 3 * i, b = $(id);
       S($$('.ln>span', b), { yPercent: 115 });
-      S(b.querySelector('.sous'), { autoAlpha: 0, y: 20 });
       linesIn(b, t0 + .05);
-      tl.to(b.querySelector('.sous'), { autoAlpha: 1, y: 0, duration: .4 }, t0 + .4);
       linesOut(b, t0 + 2.7);
-      tl.to(b.querySelector('.sous'), { autoAlpha: 0, duration: .25 }, t0 + 2.7);
     });
     /* P1 : commandes dispersées */
     let p = T.s2;
+    S(['#il1', '#il2', '#il3'], { scale: .9, transformOrigin: '1824px 540px' });
     S('#il1', { autoAlpha: 1, x: 0 });
     S('#ph1', { autoAlpha: 0, y: 80 });
     tl.to('#ph1', { autoAlpha: 1, y: 0, duration: .5 }, p + .1);
@@ -781,115 +829,118 @@ const LOGO = {
     tl.to('#il3', { autoAlpha: 0, x: 120, duration: .3, ease: 'power2.in' }, p + 2.7);
     tl.set('#s2', { autoAlpha: 0 }, T.s3);
 
-    /* ===== S3 · La transformation ===== */
+    /* ===== S3 · La transformation : chaque problème devient sa solution (avant → après) ===== */
     tl.set('#s3', { autoAlpha: 1 }, T.s3 - .05);
     const s3t = $('#s3t');
     S($$('.ln>span', s3t), { yPercent: 115 });
     linesIn(s3t, T.s3 + .05, .12);
     linesOut(s3t, T.s3 + 1.75);
-    /* petites cartes éparses qui se rangent dans le tableau de commandes (morphing désordre → ordre) */
+    /* cartes de messages : elles entourent la question puis deviennent l'« avant » des commandes */
     const mcs = $('#mcs');
     const cols = ['#25A56A', '#E0533F', '#5B8DEF', '#B07A3B', '#8B5CF6'];
     const spots = [[150, 120], [1480, 110], [90, 760], [1530, 770], [760, 850]];
+    const avantA = [[1010, 190], [1460, 250], [1070, 450], [1490, 540], [1190, 700]];
     mcs.innerHTML = spots.map((s, i) => '<div class="mc" style="left:' + s[0] + 'px;top:' + s[1] + 'px"><span class="ic" style="background:' + cols[i] + '"></span><div style="flex:1"><i style="width:80%;margin-bottom:8px"></i><i style="width:55%"></i></div></div>').join('');
     const mc = $$('.mc', mcs);
+    S('#mcs', { clipPath: 'inset(0px 0px 0px 0px)' });
     S(mc, { autoAlpha: 0, scale: .5, rotation: i => [-8, 6, 5, -7, 3][i] });
     tl.to(mc, { autoAlpha: 1, scale: 1, duration: .35, stagger: .08, ease: 'back.out(2)' }, T.s3 + .2);
-    tl.to(mc, { x: i => rowsA[i].x + 70 - spots[i][0], y: i => rowsA[i].y - spots[i][1], rotation: 0, duration: .7, stagger: .06, ease: 'power3.inOut' }, T.s3 + 1.45);
-    tl.to(mc, { autoAlpha: 0, duration: .2 }, T.s3 + 2.25);
-    /* fenêtre d'application : A puis B, puis elle se range derrière le téléphone pour C */
-    S('#win', { autoAlpha: 0, y: 40, x: 0, scale: 1 });
-    tl.to('#win', { autoAlpha: 1, y: 0, duration: .5 }, T.s3 + 1.4);
-    S(['#paneA'], { autoAlpha: 1 });
+    tl.to(mc, { x: i => avantA[i][0] - spots[i][0], y: i => avantA[i][1] - spots[i][1], rotation: i => [-6, 5, -3, 7, -4][i], duration: .6, stagger: .05, ease: 'power3.inOut' }, T.s3 + 1.6);
+    tl.to(mc, { y: i => avantA[i][1] - spots[i][1] + [-8, 8, -6, 6, -8][i], duration: .15, yoyo: true, repeat: 3, ease: 'sine.inOut' }, T.s3 + 2.35);
+    /* fenêtre d'application : révélée par le Fil, de gauche à droite */
+    S('#win', { autoAlpha: 0, clipPath: 'inset(0px 844px 0px 0px)' });
+    tl.set('#win', { autoAlpha: 1 }, T.s3 + 1.9);
+    S('#paneA', { autoAlpha: 1 });
     S(['#paneB', '#paneC'], { autoAlpha: 0 });
-    const rowsElA = $$('#tblA .tr:not(.th)');
-    S(rowsElA, { autoAlpha: 0, x: 30 });
-    tl.to(rowsElA, { autoAlpha: 1, x: 0, duration: .35, stagger: .07 }, T.s3 + 2.05);
     S('#exA', { autoAlpha: 0 });
-    tl.to('#exA', { autoAlpha: 1, duration: .4 }, T.s3 + 1.8);
-    const tb = (id, t0) => {
-      const b = $(id);
-      S(b.querySelector('.ba'), { autoAlpha: 0, y: 20 });
-      S($$('.ln>span', b), { yPercent: 115 });
-      S(b.querySelector('.sous'), { autoAlpha: 0, y: 20 });
-      tl.to(b.querySelector('.ba'), { autoAlpha: 1, y: 0, duration: .4 }, t0);
-      linesIn(b, t0 + .15);
-      tl.to(b.querySelector('.sous'), { autoAlpha: 1, y: 0, duration: .4 }, t0 + .5);
-      tl.to(b.querySelector('.ba'), { autoAlpha: 0, duration: .25 }, t0 + 3.7);
-      linesOut(b, t0 + 3.7);
-      tl.to(b.querySelector('.sous'), { autoAlpha: 0, duration: .25 }, t0 + 3.7);
+    S('#wl3', { autoAlpha: 0, left: 975 });
+    S(['#avB', '#avC'], { autoAlpha: 0, scale: .92, transformOrigin: '1400px 520px', clipPath: 'inset(0px 0px 0px 0px)' });
+    const reveal = (t, avant) => {
+      tl.set(avant, { clipPath: 'inset(0px 0px 0px 975px)' }, t - .01);
+      tl.set('#wl3', { autoAlpha: 1, left: 975 }, t);
+      tl.to('#wl3', { left: 1829, duration: .6, ease: 'power2.inOut' }, t);
+      tl.set('#wl3', { autoAlpha: 0 }, t + .62);
+      tl.to('#win', { clipPath: 'inset(0px 0px 0px 0px)', duration: .6, ease: 'power2.inOut' }, t);
+      tl.to(avant, { clipPath: 'inset(0px 0px 0px 1830px)', duration: .6, ease: 'power2.inOut' }, t);
     };
-    /* A : centraliser les commandes */
-    const tA = T.s3 + 2;
-    tb('#tbA', tA);
-    counter($('#kA1'), 0, 23, tA - .1, .9);
+    const trans = (id, t0, avant, apparition) => {
+      const b = $(id), av = b.querySelector('.av-row'), avt = b.querySelector('.av-txt'), ap = b.querySelector('.ap-row'), ti = b.querySelector('.t');
+      S(av, { autoAlpha: 0, x: -40 });
+      S(avt, { '--k': 0 });
+      S(ap, { autoAlpha: 0, x: -30 });
+      S($$('.ln>span', ti), { yPercent: 115 });
+      tl.to(av, { autoAlpha: 1, x: 0, duration: .45 }, t0);
+      if (apparition) tl.to(avant, { autoAlpha: 1, scale: 1, duration: .45, ease: 'back.out(1.6)' }, t0 + .05);
+      reveal(t0 + 1.0, avant);
+      tl.to(avt, { '--k': 1, duration: .35, ease: 'power2.out' }, t0 + 1.0);
+      tl.to(av, { opacity: .5, duration: .4 }, t0 + 1.25);
+      tl.to(ap, { autoAlpha: 1, x: 0, duration: .4 }, t0 + 1.15);
+      linesIn(ti, t0 + 1.25);
+      tl.to([av, ap], { autoAlpha: 0, duration: .25 }, t0 + 3.7);
+      linesOut(ti, t0 + 3.7);
+      tl.to('#win', { clipPath: 'inset(0px 0px 0px 844px)', duration: .45, ease: 'power2.inOut' }, t0 + 3.55);
+      tl.set('#win', { clipPath: 'inset(0px 844px 0px 0px)' }, t0 + 4.02);
+    };
+    const tA = T.s3 + 2, tB = T.s3 + 6, tC = T.s3 + 10;
+    tl.to('#exA', { autoAlpha: 1, duration: .3 }, tA + 1.4);
+    /* A : commandes dispersées → centralisées */
+    trans('#tbA', tA, '#mcs', false);
+    counter($('#kA1'), 0, 23, tA + 1.1, .8);
     S(['#chA1b', '#chA2b'], { autoAlpha: 0, scale: .6 });
     S(['#flA1', '#flA2'], { autoAlpha: 0 });
-    tl.to('#flA1', { autoAlpha: 1, duration: .15, yoyo: true, repeat: 1 }, tA + 1.9);
-    tl.to('#chA1a', { autoAlpha: 0, duration: .2 }, tA + 2.0);
-    tl.to('#chA1b', { autoAlpha: 1, scale: 1, duration: .35, ease: 'back.out(2)' }, tA + 2.05);
-    tl.to('#flA2', { autoAlpha: 1, duration: .15, yoyo: true, repeat: 1 }, tA + 2.5);
-    tl.to('#chA2a', { autoAlpha: 0, duration: .2 }, tA + 2.6);
-    tl.to('#chA2b', { autoAlpha: 1, scale: 1, duration: .35, ease: 'back.out(2)' }, tA + 2.65);
-    counter($('#kA3'), 15, 16, tA + 2.65, .2);
-    counter($('#kA1'), 23, 24, tA + 3.0, .2);
-    /* B : piloter l'activité */
-    const tB = T.s3 + 6;
-    tb('#tbB', tB);
-    tl.to('#paneA', { autoAlpha: 0, duration: .3 }, tB - .1);
-    tl.to('#paneB', { autoAlpha: 1, duration: .35 }, tB + .1);
-    tl.set('#winTitre', { textContent: 'Stocks & activité' }, tB);
+    tl.to('#flA1', { autoAlpha: 1, duration: .15, yoyo: true, repeat: 1 }, tA + 2.0);
+    tl.to('#chA1a', { autoAlpha: 0, duration: .2 }, tA + 2.1);
+    tl.to('#chA1b', { autoAlpha: 1, scale: 1, duration: .35, ease: 'back.out(2)' }, tA + 2.15);
+    tl.to('#flA2', { autoAlpha: 1, duration: .15, yoyo: true, repeat: 1 }, tA + 2.6);
+    tl.to('#chA2a', { autoAlpha: 0, duration: .2 }, tA + 2.7);
+    tl.to('#chA2b', { autoAlpha: 1, scale: 1, duration: .35, ease: 'back.out(2)' }, tA + 2.75);
+    counter($('#kA3'), 15, 16, tA + 2.75, .2);
+    counter($('#kA1'), 23, 24, tA + 3.1, .2);
+    /* B : stocks suivis manuellement → tableau de bord */
+    trans('#tbB', tB, '#avB', true);
+    tl.set('#paneA', { autoAlpha: 0 }, tB);
+    tl.set('#paneB', { autoAlpha: 1 }, tB);
+    tl.set('#winTitre', { textContent: 'Tableau de bord' }, tB);
     tl.set('#winTitre', { textContent: 'Commandes' }, T.s3 - .05);
     const gauges = $$('#paneB .gauge i');
     S(gauges, { scaleX: 0, transformOrigin: '0 50%' });
-    tl.to(gauges, { scaleX: 1, duration: .6, stagger: .08 }, tB + .3);
-    draw('#courbeB', tB + .4, 1.0);
-    counter($('#kB1'), 0, 184, tB + .4, 1.0);
+    tl.to(gauges, { scaleX: 1, duration: .6, stagger: .08 }, tB + 1.1);
+    draw('#courbeB', tB + 1.2, 1.0);
+    counter($('#kB1'), 0, 184, tB + 1.2, 1.0);
     S('#toastB', { autoAlpha: 0, y: 30 });
     S('#okB', { autoAlpha: 0 });
-    tl.to('#toastB', { autoAlpha: 1, y: 0, duration: .4, ease: 'back.out(1.6)' }, tB + 1.4);
+    tl.to('#toastB', { autoAlpha: 1, y: 0, duration: .4, ease: 'back.out(1.6)' }, tB + 1.8);
     S('#curseur', { autoAlpha: 0, left: 1500, top: 980, scale: 1 });
     S('#onde', { autoAlpha: 0 });
-    tl.to('#curseur', { autoAlpha: 1, duration: .2 }, tB + 1.7);
-    tap(btnB.x + btnB.w / 2, btnB.y + btnB.h / 2, tB + 2.25);
-    tl.to('#okB', { autoAlpha: 1, duration: .3 }, tB + 2.45);
-    tl.to('#gB', { width: '72%', backgroundColor: '#3DD6C6', duration: .6 }, tB + 2.6);
-    counter($('#qB'), 12, 150, tB + 2.6, .6);
-    tl.to('#lowB', { autoAlpha: 0, duration: .25 }, tB + 2.6);
-    tl.to('#toastB', { autoAlpha: 0, y: -20, duration: .3 }, tB + 3.4);
-    tl.to('#curseur', { autoAlpha: 0, duration: .2 }, tB + 2.7);
-    /* C : faciliter les ventes */
-    const tC = T.s3 + 10;
-    tb('#tbC', tC);
-    tl.to('#paneB', { autoAlpha: 0, duration: .3 }, tC - .1);
-    tl.to('#paneC', { autoAlpha: 1, duration: .35 }, tC + .1);
-    tl.set('#winTitre', { textContent: 'Catalogue en ligne' }, tC);
-    tl.set('#winDroite', { textContent: 'Site web' }, tC);
-    tl.set('#winDroite', { textContent: "Aujourd'hui" }, T.s3 - .05);
-    tl.to('#win', { x: -20, y: 110, scale: .74, duration: .7, ease: 'power3.inOut' }, tC);
-    tl.to('#exA', { left: 940, top: 900, width: 1560 - 940, duration: .7, ease: 'power3.inOut' }, tC);
-    S('#phC', { autoAlpha: 0, y: 700 });
-    tl.to('#phC', { autoAlpha: 1, y: 0, duration: .7, ease: 'power4.out' }, tC + .3);
-    S('#panB', { scale: 1 });
-    tl.to('#curseur', { autoAlpha: 1, duration: .2 }, tC + .7);
-    tap(plus1.x + plus1.w / 2, plus1.y + plus1.h / 2, tC + 1.3);
-    tl.set('#panB', { textContent: '1' }, tC + 1.35);
-    tl.to('#panB', { scale: 1.4, duration: .12, yoyo: true, repeat: 1 }, tC + 1.35);
-    tap(plus2.x + plus2.w / 2, plus2.y + plus2.h / 2, tC + 1.85);
-    tl.set('#panB', { textContent: '2' }, tC + 1.9);
-    tl.to('#panB', { scale: 1.4, duration: .12, yoyo: true, repeat: 1 }, tC + 1.9);
-    tl.set('#panB', { textContent: '0' }, T.s3 - .05);
-    tap(cmdC.x + cmdC.w / 2, cmdC.y + cmdC.h / 2, tC + 2.4);
-    S('#confC', { autoAlpha: 0, x: 120 });
-    tl.to('#confC', { autoAlpha: 1, x: 0, duration: .4 }, tC + 2.55);
-    tl.to('#curseur', { autoAlpha: 0, duration: .2 }, tC + 2.8);
-    S('#notifC', { autoAlpha: 0, x: 260, y: 40, scale: .8 });
-    tl.to('#notifC', { autoAlpha: 1, x: 0, y: 0, scale: 1, duration: .5, ease: 'back.out(1.6)' }, tC + 3.0);
-    tl.to(['#win', '#phC', '#notifC', '#exA'], { autoAlpha: 0, y: '-=30', duration: .3, ease: 'power2.in' }, T.s4 - .3);
+    tl.to('#curseur', { autoAlpha: 1, duration: .2 }, tB + 2.0);
+    tap(btnB.x + btnB.w / 2, btnB.y + btnB.h / 2, tB + 2.6);
+    tl.to('#okB', { autoAlpha: 1, duration: .3 }, tB + 2.75);
+    tl.to('#gB', { width: '72%', backgroundColor: '#3DD6C6', duration: .6 }, tB + 2.9);
+    counter($('#qB'), 12, 150, tB + 2.9, .6);
+    tl.to('#lowB', { autoAlpha: 0, duration: .25 }, tB + 2.9);
+    tl.to('#curseur', { autoAlpha: 0, duration: .2 }, tB + 3.2);
+    /* C : processus répétitifs → opérations automatisées */
+    trans('#tbC', tC, '#avC', true);
+    tl.set('#paneB', { autoAlpha: 0 }, tC);
+    tl.set('#paneC', { autoAlpha: 1 }, tC);
+    tl.set('#winTitre', { textContent: 'Automatisations' }, tC);
+    S('#cmdIn', { autoAlpha: 0, x: -40 });
+    tl.to('#cmdIn', { autoAlpha: 1, x: 0, duration: .4 }, tC + 1.5);
+    const taches = $$('#paneC .tache');
+    S(taches.map(t => t.querySelector('.prog')), { scaleX: 0 });
+    S(taches.map(t => t.querySelector('.ok-chip')), { autoAlpha: 0, scale: .6 });
+    taches.forEach((t, i) => {
+      const t1 = tC + 1.8 + .36 * i;
+      tl.to(t.querySelector('.prog'), { scaleX: 1, duration: .3, ease: 'power1.inOut' }, t1);
+      tl.to(t.querySelector('.ok-chip'), { autoAlpha: 1, scale: 1, duration: .25, ease: 'back.out(2.5)' }, t1 + .28);
+    });
+    S('#saisieC', { autoAlpha: 0, y: 20 });
+    tl.to('#saisieC', { autoAlpha: 1, y: 0, duration: .4 }, tC + 3.2);
+    tl.to('#exA', { autoAlpha: 0, duration: .3 }, T.s4 - .3);
     tl.set('#s3', { autoAlpha: 0 }, T.s4);
     tl.to('#tag', { autoAlpha: 0, y: 20, duration: .3 }, T.s4 - .3);
 
-    /* ===== S4 · Volkeno ===== */
+    /* ===== S4 · Volkeno : logo assemblé, puis signature en très grand reliée aux savoir-faire locaux ===== */
     tl.set('#s4', { autoAlpha: 1 }, T.s4 - .05);
     tl.to('#halo', { autoAlpha: 1, duration: .6 }, T.s4);
     tl.to('#halo', { autoAlpha: 0, duration: .4 }, T.s5 - .4);
@@ -901,47 +952,52 @@ const LOGO = {
     S('#lgM', { clipPath: 'inset(0% 100% 0% 0%)' });
     tl.to('#lgM', { clipPath: 'inset(0% 0% 0% 0%)', duration: .5, ease: 'power2.inOut' }, T.s4 + .8);
     tl.to('#logoV', { scale: 1.04, duration: .2, yoyo: true, repeat: 1, ease: 'sine.inOut' }, T.s4 + 1.0);
-    tl.to('#logoV', { x: -470, scale: .9, duration: .6, ease: 'power3.inOut' }, T.s4 + 1.4);
-    const m4 = $('#msg4 .t');
-    S($$('.ln>span', m4), { yPercent: 115 });
-    linesIn(m4, T.s4 + 1.65, .12);
-    linesOut(m4, T.s4 + 3.35);
-    tl.to('#logoV', { x: 0, y: -240, scale: .42, duration: .6, ease: 'power3.inOut' }, T.s4 + 3.4);
+    tl.to('#logoV', { y: -330, scale: .45, duration: .6, ease: 'power3.inOut' }, T.s4 + 1.35);
     S('#sigEb', { autoAlpha: 0, y: 20 });
-    tl.to('#sigEb', { autoAlpha: 1, y: 0, duration: .4 }, T.s4 + 3.6);
-    const sigT = $('#sigT');
-    S($$('.ln>span', sigT), { yPercent: 115 });
-    linesIn(sigT, T.s4 + 3.75, .14);
+    tl.to('#sigEb', { autoAlpha: 1, y: 0, duration: .4 }, T.s4 + 1.6);
+    const sigL = $$('.ln>span', $('#sigT'));
+    S(sigL.slice(0, 2), { yPercent: 115 });
+    tl.to(sigL.slice(0, 2), { yPercent: 0, duration: .55, stagger: .14 }, T.s4 + 1.7);
+    S(sigL[2], { autoAlpha: 0, scale: .55, transformOrigin: '50% 60%', filter: 'drop-shadow(0px 0px 0px rgba(61,214,198,0))' });
+    tl.to(sigL[2], { autoAlpha: 1, scale: 1, duration: .7, ease: 'back.out(1.4)' }, T.s4 + 2.15);
+    tl.to(sigL[2], { filter: 'drop-shadow(0px 0px 34px rgba(61,214,198,.8))', duration: .4, yoyo: true, repeat: 1, ease: 'sine.inOut' }, T.s4 + 2.8);
     S('#fil4', { left: local.x, top: local.y + local.h + 2, width: 0 });
-    tl.to('#fil4', { width: local.w, duration: .6, ease: 'power2.inOut' }, T.s4 + 4.3);
-    tl.to(['#sigEb', '#sigT', '#fil4', '#logoV'], { autoAlpha: 0, y: '-=30', duration: .35, ease: 'power2.in' }, T.s5 - .4);
+    tl.to('#fil4', { width: local.w, duration: .6, ease: 'power2.inOut' }, T.s4 + 2.75);
+    const ronds = $$('#savoir .rond');
+    S(ronds, { autoAlpha: 0, scale: .4 });
+    tl.to(ronds, { autoAlpha: 1, scale: 1, duration: .4, stagger: .1, ease: 'back.out(2)' }, T.s4 + 3.1);
+    S('#filS', { scaleX: 0, transformOrigin: '0 50%' });
+    tl.to('#filS', { scaleX: 1, duration: .9, ease: 'power2.inOut' }, T.s4 + 3.1);
+    tl.to(['#sigEb', '#sigT', '#fil4', '#logoV', '#savoir'], { autoAlpha: 0, y: '-=30', duration: .35, ease: 'power2.in' }, T.s5 - .4);
     tl.set('#s4', { autoAlpha: 0 }, T.s5);
 
-    /* ===== S5 · Conversion (le QR reste visible jusqu'au volet de boucle) ===== */
+    /* ===== S5 · Conversion (le QR reste visible et immobile jusqu'au balayage de boucle) ===== */
     tl.set('#s5', { autoAlpha: 1 }, T.s5 - .45);
-    tl.set('#qr5', { autoAlpha: 0, x: 700 }, .28);
+    tl.set('#qr5', { autoAlpha: 0, x: 700 }, .62);
     tl.to('#qr5', { autoAlpha: 1, x: 0, duration: .45, ease: 'power3.out' }, T.s5 - .45);
-    const qg = $('#q5big .t');
-    S($$('.ln>span', qg), { yPercent: 115 });
-    linesIn(qg, T.s5 + .05, .14);
-    linesOut(qg, T.s5 + 1.25);
-    tl.set('#q5', { autoAlpha: 0, y: 24 }, .28);
-    tl.to('#q5', { autoAlpha: 1, y: 0, duration: .45 }, T.s5 + 1.45);
     const p5 = $('#p5 .t');
-    tl.set($$('.ln>span', p5), { yPercent: 115 }, .28);
-    linesIn(p5, T.s5 + 1.6, .14);
-    tl.set('#fil5', { left: stand.x, top: stand.y + stand.h + 4, width: 0 }, .28);
+    tl.set($$('.ln>span', p5), { yPercent: 115 }, .62);
+    linesIn(p5, T.s5 + .05, .12);
+    tl.set('#fil5', { left: stand.x, top: stand.y + stand.h + 4, width: 0 }, .62);
     S('#fil5', { left: stand.x, top: stand.y + stand.h + 4, width: stand.w });
-    tl.to('#fil5', { width: stand.w, duration: .6, ease: 'power2.inOut' }, T.s5 + 2.3);
-    tl.set('#e5', { autoAlpha: 0, x: -40 }, .28);
-    tl.to('#e5', { autoAlpha: 1, x: 0, duration: .45 }, T.s5 + 2.7);
-    tl.set('#c5', { autoAlpha: 0, x: -40 }, .28);
-    tl.to('#c5', { autoAlpha: 1, x: 0, duration: .45 }, T.s5 + 3.2);
-    tl.set('#l5', { autoAlpha: 0, x: -40 }, .28);
-    tl.to('#l5', { autoAlpha: 1, x: 0, duration: .45 }, T.s5 + 3.6);
+    tl.to('#fil5', { width: stand.w, duration: .6, ease: 'power2.inOut' }, T.s5 + .9);
+    tl.set('#e5', { autoAlpha: 0, x: -40 }, .62);
+    tl.to('#e5', { autoAlpha: 1, x: 0, duration: .45 }, T.s5 + 1.4);
+    tl.set('#c5', { autoAlpha: 0, x: -40 }, .62);
+    tl.to('#c5', { autoAlpha: 1, x: 0, duration: .45 }, T.s5 + 2.0);
+    tl.set('#l5', { autoAlpha: 0, x: -40 }, .62);
+    tl.to('#l5', { autoAlpha: 1, x: 0, duration: .45 }, T.s5 + 2.4);
     const coins = $$('#qr5 .coin');
     S(coins, { scale: 1, autoAlpha: 1 });
-    [T.s5 + 4.2, T.s5 + 6.4, T.s5 + 8.6].forEach(t => tl.to(coins, { scale: 1.12, duration: .3, yoyo: true, repeat: 1, ease: 'sine.inOut' }, t));
+    /* pendant l'attente : halo et coins qui respirent autour de la carte (le QR lui-même ne bouge jamais) */
+    const HALO = '0px 0px 0px 6px rgba(61,214,198,0.55), 0px 0px 60px 0px rgba(61,214,198,0.35)';
+    const HALO_FORT = '0px 0px 0px 12px rgba(61,214,198,0.85), 0px 0px 110px 0px rgba(61,214,198,0.6)';
+    S('#qr5', { boxShadow: HALO });
+    [T.s5 + 3.5, T.s5 + 5.7, T.s5 + 7.9].forEach(t => {
+      tl.to(coins, { scale: 1.16, duration: .35, yoyo: true, repeat: 1, ease: 'sine.inOut' }, t);
+      tl.to('#qr5', { boxShadow: HALO_FORT, duration: .5, yoyo: true, repeat: 1, ease: 'sine.inOut' }, t - .1);
+      tl.to('#e5 svg', { y: -10, duration: .3, yoyo: true, repeat: 1, ease: 'sine.inOut' }, t + 1.1);
+    });
     tl.set({}, {}, DUR);
   }
 

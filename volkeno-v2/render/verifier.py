@@ -1,12 +1,12 @@
 """Vérifie la vidéo exportée : caractéristiques techniques, QR code lu sur des images extraites de la vidéo, boucle.
-Usage : python3 render/verifier.py [export/volkeno-consommer-local-v2.mp4]"""
+Usage : python3 render/verifier.py [export/volkeno-consommer-local-v2.1.mp4]"""
 import json, re, subprocess, sys, io
 from pathlib import Path
 from PIL import Image
 import zxingcpp
 
 RACINE = Path(__file__).resolve().parent.parent
-VIDEO = Path(sys.argv[1]) if len(sys.argv) > 1 else RACINE / 'export' / 'volkeno-consommer-local-v2.mp4'
+VIDEO = Path(sys.argv[1]) if len(sys.argv) > 1 else RACINE / 'export' / 'volkeno-consommer-local-v2.1.mp4'
 ATTENDU = re.search(r"qrUrl:\s*'([^']+)'", (RACINE / 'src' / 'index.html').read_text(encoding='utf-8')).group(1)
 
 def sonde():
@@ -56,7 +56,7 @@ res = {'fichier': VIDEO.name, 'duree_s': round(float(info['format']['duration'])
        'audio': [{'codec': s['codec_name']} for s in a], 'qr_attendu': ATTENDU, 'qr': [], 'qr_distance': [], 'qr_biais': []}
 
 # 1. lecture du QR sur des images de la séquence finale (35 → 45 s) et sur la première image de la boucle
-for t in [0.0, 35.0, 36.0, 38.0, 40.0, 42.0, 44.0, 44.96]:
+for t in [0.0] + [35.0 + .5 * k for k in range(20)] + [44.96]:
     txt = lire(image(t))
     res['qr'].append({'t': t, 'lu': txt[0] if txt else None, 'ok': bool(txt) and txt[0] == ATTENDU})
 
@@ -75,6 +75,24 @@ for k in [.85, .7, .55]:
 # 4. boucle : première et dernière image
 f0 = image(0.0).resize((192, 108)).convert('L'); f1 = image(res['duree_s'] - 1 / 25).resize((192, 108)).convert('L')
 res['boucle_ecart_moyen_sur_255'] = round(sum(abs(x - y) for x, y in zip(f0.tobytes(), f1.tobytes())) / (192 * 108), 3)
+
+# 5. fluidité : écart entre images consécutives sur toute la vidéo (y compris dernière → première)
+W2, H2 = 192, 108
+raw = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', str(VIDEO), '-vf', f'scale={W2}:{H2},format=gray', '-f', 'rawvideo', '-'], capture_output=True, check=True).stdout
+n = W2 * H2; frames = [raw[k:k + n] for k in range(0, len(raw) - n + 1, n)]
+ecart = lambda a, b: sum(abs(x - y) for x, y in zip(a, b)) / n
+diffs = [ecart(frames[k], frames[k + 1]) for k in range(len(frames) - 1)]
+ordre = sorted(diffs)
+boucle = ecart(frames[-1], frames[0])
+res['fluidite'] = {
+    'images_analysees': len(frames),
+    'ecart_median': round(ordre[len(ordre) // 2], 2),
+    'ecart_p95': round(ordre[int(len(ordre) * .95)], 2),
+    'ecart_max': round(ordre[-1], 2),
+    'plus_grands_ecarts': [{'t': round((k + 1) / 25, 2), 'ecart': round(d, 2)} for k, d in sorted(enumerate(diffs), key=lambda x: -x[1])[:6]],
+    'images_figees_consecutives_max': max((len(s) for s in ''.join('0' if d < .05 else '1' for d in diffs).split('1')), default=0),
+    'ecart_derniere_vers_premiere': round(boucle, 2),
+}
 
 (RACINE / 'controle').mkdir(exist_ok=True)
 (RACINE / 'controle' / 'verification.json').write_text(json.dumps(res, ensure_ascii=False, indent=2), encoding='utf-8')
