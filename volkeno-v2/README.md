@@ -45,6 +45,7 @@ pip install zxing-cpp pillow     # lecture du QR pour la vérification
 npm run controle                 # captures et contrôles de mise en page
 npm run rendu                    # → export/volkeno-consommer-local-v2.1.mp4 (≈ 3 min)
 npm run verifier                 # QR, durée, codec, fluidité, boucle → controle/verification.json
+npm run boucle-10min             # 13 boucles enchaînées sans réencodage (9 min 45 s) pour lecteur USB
 ```
 
 Le rendu n'utilise jamais le réseau : toutes les requêtes sont servies depuis `src/` et `vendor/`, les autres sont bloquées et listées.
